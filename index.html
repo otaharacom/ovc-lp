@@ -1,0 +1,1878 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<template id="__bundler_thumbnail" data-bg-color="#0E3D3A">
+  <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1200" height="800" fill="#0E3D3A"/>
+    <g transform="translate(600 380)" fill="none" stroke="#B2DBD8" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="0" cy="-30" r="70"/>
+      <circle cx="-90" cy="-100" r="22" fill="#B2DBD8" stroke="none"/>
+      <circle cx="90" cy="-100" r="22" fill="#B2DBD8" stroke="none"/>
+      <circle cx="-140" cy="-30" r="18" fill="#B2DBD8" stroke="none"/>
+      <circle cx="140" cy="-30" r="18" fill="#B2DBD8" stroke="none"/>
+      <path d="M-40 -20 q40 -40 80 0" stroke-width="5"/>
+      <circle cx="-22" cy="-40" r="5" fill="#0E3D3A" stroke="none"/>
+      <circle cx="22" cy="-40" r="5" fill="#0E3D3A" stroke="none"/>
+    </g>
+    <text x="600" y="560" text-anchor="middle" font-family="serif" font-weight="600" font-size="42" fill="#E6F5F4" letter-spacing="6">おおたはら動物診療所</text>
+    <text x="600" y="610" text-anchor="middle" font-family="Lato, sans-serif" font-size="18" fill="#5BADA8" letter-spacing="6">OTAHARA VETERINARY CLINIC</text>
+  </svg>
+</template>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>おおたはら動物診療所｜獣医師訪問ケア OVC</title>
+<meta name="description" content="獣医師がご自宅に伺う訪問ケアサービス。高齢・持病のあるペットと、ご家族の暮らしに寄り添います。所沢・狭山・入間エリア対応。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  /* Turquoise palette — refined */
+  --t:#5BADA8;
+  --t-d:#3D8F8A;
+  --t-dd:#1F5C58;
+  --t-ddd:#0E3D3A;
+  --t-l:#80C4C0;
+  --t-ll:#B2DBD8;
+  --t-pale:#E6F5F4;
+  --t-ghost:#F2FAF9;
+
+  /* Warm neutrals */
+  --sand:#F5EFE2;
+  --sand-d:#E8DCC2;
+  --ivory:#FDFAF4;
+  --ivory-d:#F7F1E6;
+  --paper:#FFFBF2;
+
+  /* Ink */
+  --ink:#11211F;
+  --ink-m:#3E5C58;
+  --ink-l:#56847F;
+  --ink-sub:#6E8B86;
+
+  /* Accent */
+  --gold:#C49A4A;
+  --gold-l:#E1C281;
+}
+
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;}
+body{
+  font-family:'Noto Sans JP',sans-serif;font-weight:300;
+  background:var(--ivory);color:var(--ink);
+  line-height:1.95;font-size:15px;overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;
+}
+img{max-width:100%;display:block;}
+button,a{font-family:inherit;}
+
+/* ─────────── primitives ─────────── */
+.serif{font-family:'Noto Serif JP',serif;font-weight:600;letter-spacing:.02em;}
+.lato{font-family:'Lato',sans-serif;}
+.eyebrow{
+  font-family:'Lato',sans-serif;font-size:11px;font-weight:400;
+  letter-spacing:.32em;text-transform:uppercase;color:var(--t);
+  display:inline-flex;align-items:center;gap:12px;
+}
+.eyebrow::before{
+  content:'';display:inline-block;width:28px;height:1px;background:var(--t);
+}
+.sec-num{
+  font-family:'Lato',sans-serif;font-size:10px;font-weight:400;
+  letter-spacing:.3em;color:var(--ink-sub);
+}
+.h-sec{
+  font-family:'Noto Serif JP',serif;font-weight:600;
+  font-size:clamp(26px,6.4vw,38px);line-height:1.45;color:var(--t-ddd);
+  letter-spacing:.04em;margin:14px 0 8px;
+}
+.h-sec-en{
+  font-family:'Lato',sans-serif;font-style:italic;
+  font-size:13px;font-weight:300;color:var(--ink-sub);
+  letter-spacing:.05em;margin-bottom:30px;
+}
+.lead{font-size:14.5px;line-height:2.0;color:var(--ink-m);}
+
+/* ─────────── header ─────────── */
+.hd{
+  position:fixed;top:0;left:0;right:0;z-index:200;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:14px 20px;
+  background:rgba(253,250,244,.88);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
+  border-bottom:1px solid rgba(91,173,168,.16);
+}
+.brand{display:flex;align-items:center;gap:14px;text-decoration:none;}
+.brand-mark{width:64px;height:64px;flex-shrink:0;border-radius:50%;overflow:hidden;}
+.brand-mark img{width:100%;height:100%;object-fit:cover;display:block;}
+.brand-txt{display:flex;flex-direction:column;line-height:1;}
+.brand-jp{font-family:'Noto Serif JP',serif;font-weight:600;font-size:22px;color:var(--t-dd);letter-spacing:.06em;}
+.brand-en{font-family:'Lato',sans-serif;font-size:13px;font-weight:400;color:var(--ink-sub);letter-spacing:.22em;margin-top:5px;}
+
+.hd-cta{
+  display:inline-flex;align-items:center;gap:8px;
+  background:var(--t-dd);color:#fff;border:none;text-decoration:none;
+  padding:9px 16px;border-radius:999px;font-size:12px;font-weight:500;
+  transition:.25s;letter-spacing:.05em;
+}
+.hd-cta:hover{background:var(--t-ddd);transform:translateY(-1px);}
+.line-sq{
+  width:16px;height:16px;border-radius:4px;background:#06C755;
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Lato',sans-serif;font-size:10px;font-weight:700;color:#fff;flex-shrink:0;
+}
+
+/* ─────────── hamburger + menu overlay ─────────── */
+.hd-right{display:flex;align-items:center;gap:10px;}
+.hd-burger{
+  width:44px;height:44px;border:none;background:transparent;cursor:pointer;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;
+  padding:0;color:var(--t-ddd);position:relative;z-index:300;
+  transition:color .25s;
+}
+.hd-burger span{
+  display:block;width:22px;height:1.5px;background:currentColor;border-radius:1px;
+  transition:transform .35s ease,opacity .25s ease,width .35s ease;
+}
+.hd-burger span:nth-child(2){width:16px;}
+.hd-burger:hover{color:var(--t-d);}
+.hd-burger:hover span:nth-child(2){width:22px;}
+body.menu-open .hd-burger{color:#fff;}
+body.menu-open .hd-burger span{width:22px;}
+body.menu-open .hd-burger span:nth-child(1){transform:translateY(6.5px) rotate(45deg);}
+body.menu-open .hd-burger span:nth-child(2){opacity:0;}
+body.menu-open .hd-burger span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg);}
+
+.menu-overlay{
+  position:fixed;inset:0;z-index:250;
+  background:var(--t-ddd);color:#fff;
+  display:flex;flex-direction:column;
+  opacity:0;visibility:hidden;
+  transition:opacity .4s ease,visibility .4s ease;
+  overflow-y:auto;
+}
+.menu-overlay::before{
+  content:'';position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(circle at 100% 0%,rgba(91,173,168,.18),transparent 55%),
+             radial-gradient(circle at 0% 100%,rgba(196,154,74,.06),transparent 50%);
+}
+.menu-overlay::after{
+  content:'OVC';position:absolute;right:-30px;bottom:-90px;
+  font-family:'Lato',sans-serif;font-weight:700;font-size:260px;line-height:1;
+  color:rgba(255,255,255,.04);letter-spacing:-.02em;pointer-events:none;
+}
+body.menu-open .menu-overlay{opacity:1;visibility:visible;}
+body.menu-open{overflow:hidden;}
+
+.menu-inner{
+  position:relative;z-index:2;
+  flex:1;display:flex;flex-direction:column;
+  padding:100px 28px 40px;
+  max-width:640px;width:100%;margin:0 auto;
+}
+.menu-eyebrow{
+  font-family:'Lato',sans-serif;font-style:italic;font-weight:300;font-size:12px;
+  color:var(--t-l);letter-spacing:.16em;margin-bottom:24px;
+  display:inline-flex;align-items:center;gap:10px;
+}
+.menu-eyebrow::before{content:'';width:24px;height:1px;background:var(--t-l);}
+
+.menu-nav{
+  display:flex;flex-direction:column;
+  margin-bottom:auto;
+}
+.menu-link{
+  display:grid;grid-template-columns:36px 1fr auto;gap:14px;align-items:baseline;
+  padding:14px 0;text-decoration:none;color:#fff;
+  border-bottom:1px solid rgba(255,255,255,.1);
+  transition:padding .25s ease,color .2s;
+  opacity:0;transform:translateX(-12px);
+}
+body.menu-open .menu-link{opacity:1;transform:translateX(0);transition:opacity .5s ease,transform .5s ease,padding .25s ease,color .2s;}
+body.menu-open .menu-link:nth-child(1){transition-delay:.08s;}
+body.menu-open .menu-link:nth-child(2){transition-delay:.12s;}
+body.menu-open .menu-link:nth-child(3){transition-delay:.16s;}
+body.menu-open .menu-link:nth-child(4){transition-delay:.2s;}
+body.menu-open .menu-link:nth-child(5){transition-delay:.24s;}
+body.menu-open .menu-link:nth-child(6){transition-delay:.28s;}
+body.menu-open .menu-link:nth-child(7){transition-delay:.32s;}
+body.menu-open .menu-link:nth-child(8){transition-delay:.36s;}
+body.menu-open .menu-link:nth-child(9){transition-delay:.4s;}
+body.menu-open .menu-link:nth-child(10){transition-delay:.44s;}
+.menu-link:hover{padding-left:10px;color:var(--t-l);}
+.menu-num{
+  font-family:'Lato',sans-serif;font-size:10px;font-weight:400;
+  color:rgba(255,255,255,.42);letter-spacing:.16em;
+}
+.menu-jp{
+  font-family:'Noto Serif JP',serif;font-weight:600;font-size:20px;
+  letter-spacing:.06em;line-height:1.3;
+}
+.menu-en{
+  font-family:'Lato',sans-serif;font-style:italic;font-weight:300;font-size:11px;
+  color:rgba(255,255,255,.48);letter-spacing:.08em;
+}
+
+.menu-foot{
+  margin-top:36px;padding-top:24px;
+  border-top:1px solid rgba(255,255,255,.1);
+  display:flex;flex-direction:column;gap:18px;
+}
+.menu-cta{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  background:var(--paper);color:var(--t-ddd);text-decoration:none;
+  padding:16px 24px;border-radius:999px;font-size:14px;font-weight:600;
+  font-family:'Noto Serif JP',serif;letter-spacing:.05em;
+  transition:.2s;
+}
+.menu-cta:hover{transform:translateY(-2px);box-shadow:0 14px 28px rgba(0,0,0,.22);}
+.menu-socials{
+  display:flex;gap:8px;flex-wrap:wrap;
+}
+.menu-soc{
+  display:inline-flex;align-items:center;gap:7px;
+  color:rgba(255,255,255,.7);text-decoration:none;
+  font-size:11px;letter-spacing:.06em;
+  padding:8px 14px;border:1px solid rgba(255,255,255,.14);border-radius:999px;
+  transition:.2s;
+}
+.menu-soc:hover{border-color:var(--t-l);color:#fff;}
+.menu-soc svg{width:13px;height:13px;flex-shrink:0;}
+.menu-fine{
+  font-family:'Lato',sans-serif;font-size:10px;color:rgba(255,255,255,.32);
+  letter-spacing:.14em;padding-top:6px;
+}
+
+@media(min-width:768px){
+  .menu-inner{padding:120px 60px 60px;}
+  .menu-jp{font-size:24px;}
+  .menu-link{padding:18px 0;}
+}
+
+.menu-close{
+  position:absolute;top:18px;right:20px;z-index:5;
+  display:inline-flex;align-items:center;gap:8px;
+  background:transparent;border:1px solid rgba(255,255,255,.22);
+  color:#fff;padding:8px 14px 8px 12px;border-radius:999px;
+  cursor:pointer;transition:.2s;
+  font-family:'Lato',sans-serif;font-size:11px;letter-spacing:.18em;
+  text-transform:uppercase;
+}
+.menu-close:hover{background:rgba(255,255,255,.08);border-color:var(--t-l);}
+.menu-close svg{width:14px;height:14px;}
+.menu-close-label{font-weight:400;}
+@media(min-width:768px){
+  .menu-close{top:28px;right:36px;padding:10px 18px 10px 14px;font-size:12px;}
+  .menu-close svg{width:16px;height:16px;}
+}
+
+/* ─────────── HERO ─────────── */
+.hero{
+  position:relative;min-height:100svh;background:var(--paper);
+  padding:118px 0 0;overflow:hidden;
+}
+.hero-inner{padding:8px 24px 36px;position:relative;}
+.hero-photo{
+  width:100%;aspect-ratio:4/5;overflow:hidden;position:relative;
+  border-radius:2px;
+  background:#2c4341;
+}
+.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:50% 50%;}
+.hero-body{padding:38px 24px 60px;background:var(--paper);position:relative;}
+.hero-h1{
+  font-family:'Noto Serif JP',serif;font-weight:600;
+  font-size:clamp(28px,8.4vw,46px);line-height:1.45;color:var(--t-ddd);
+  letter-spacing:.06em;margin-bottom:10px;
+}
+.hero-h1 em{font-style:normal;color:var(--t-d);background:linear-gradient(180deg,transparent 65%,rgba(91,173,168,.22) 65%);padding:0 4px;}
+.hero-sub{
+  margin:24px 0 30px;font-size:14.5px;color:var(--ink-m);line-height:2.0;
+  max-width:520px;
+}
+.btn-primary{
+  display:inline-flex;align-items:center;gap:12px;
+  background:var(--t-dd);color:#fff;text-decoration:none;border:none;cursor:pointer;
+  padding:18px 32px;border-radius:999px;font-size:15px;font-weight:500;
+  box-shadow:0 8px 24px rgba(14,61,58,.18);transition:.25s;
+  letter-spacing:.04em;
+}
+.btn-primary:hover{background:var(--t-ddd);transform:translateY(-2px);box-shadow:0 14px 32px rgba(14,61,58,.26);}
+.hero-meta{
+  margin-top:16px;display:flex;flex-direction:column;gap:6px;
+  font-size:12px;color:var(--ink-l);letter-spacing:.04em;
+}
+.hero-meta-row{display:flex;align-items:center;gap:9px;}
+.hero-meta-dot{width:4px;height:4px;border-radius:50%;background:var(--t);}
+
+/* hero quote ribbon */
+.hero-ribbon{
+  position:absolute;top:120px;left:0;
+  padding:6px 16px 6px 24px;background:var(--t-ddd);color:#fff;
+  font-family:'Lato',sans-serif;font-size:10px;letter-spacing:.3em;
+  text-transform:uppercase;z-index:5;
+}
+
+/* ─────────── shared section ─────────── */
+.sec{padding:80px 24px;position:relative;}
+.sec-head{margin-bottom:38px;}
+.section-divider{
+  height:1px;background:linear-gradient(90deg,transparent,var(--t-ll),transparent);
+}
+
+/* ─────────── WORRIES ─────────── */
+.sec-worries{background:var(--sand);}
+.worry-grid{
+  display:grid;grid-template-columns:1fr 1fr;gap:1px;
+  background:rgba(91,173,168,.18);border:1px solid rgba(91,173,168,.18);
+  margin-bottom:32px;
+}
+.worry{
+  background:var(--ivory);padding:24px 18px;
+  display:flex;flex-direction:column;gap:10px;min-height:120px;
+}
+.worry-icon{
+  width:28px;height:28px;color:var(--t);
+}
+.worry-icon svg{width:100%;height:100%;}
+.worry-txt{font-size:13px;line-height:1.7;color:var(--ink);font-weight:400;}
+.worry-num{
+  font-family:'Lato',sans-serif;font-size:10px;font-weight:400;color:var(--ink-sub);
+  letter-spacing:.18em;margin-bottom:auto;
+}
+.answer-card{
+  background:var(--t-ddd);color:#fff;padding:32px 28px;border-radius:4px;
+  position:relative;overflow:hidden;
+}
+.answer-card::before{
+  content:'';position:absolute;right:-40px;top:-40px;
+  width:200px;height:200px;border-radius:50%;
+  background:rgba(91,173,168,.18);pointer-events:none;
+}
+.answer-eb{
+  font-family:'Lato',sans-serif;font-style:italic;font-size:12px;font-weight:300;
+  color:var(--t-l);letter-spacing:.06em;margin-bottom:14px;position:relative;
+}
+.answer-h{
+  font-family:'Noto Serif JP',serif;font-weight:600;font-size:21px;line-height:1.7;
+  margin-bottom:14px;letter-spacing:.04em;position:relative;
+}
+.answer-h em{font-style:normal;color:var(--t-l);}
+.answer-body{font-size:13.5px;line-height:1.95;color:rgba(255,255,255,.82);position:relative;}
+
+/* ─────────── ABOUT ─────────── */
+.sec-about{background:var(--ivory-d);}
+.about-photo{
+  width:100%;aspect-ratio:3/4;overflow:hidden;border-radius:2px;
+  margin-bottom:28px;max-width:340px;
+  box-shadow:0 14px 40px rgba(14,61,58,.16);
+}
+.about-photo img{width:100%;height:100%;object-fit:cover;object-position:62% 22%;}
+
+.about-name-row{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin-bottom:4px;}
+.about-name{
+  font-family:'Noto Serif JP',serif;font-weight:600;font-size:24px;color:var(--t-ddd);
+  letter-spacing:.05em;
+}
+.about-name-en{font-family:'Lato',sans-serif;font-size:12px;color:var(--ink-sub);letter-spacing:.12em;}
+.about-role{
+  font-family:'Lato',sans-serif;font-size:10px;font-weight:400;letter-spacing:.28em;
+  text-transform:uppercase;color:var(--t);margin-bottom:24px;
+}
+.cv{
+  border-top:1px solid var(--sand-d);border-bottom:1px solid var(--sand-d);
+  padding:18px 0;margin-bottom:24px;
+  display:flex;flex-direction:column;gap:11px;
+}
+.cv li{
+  list-style:none;display:grid;grid-template-columns:38px 1fr;gap:12px;align-items:start;
+  font-size:13px;color:var(--ink-m);line-height:1.7;
+}
+.cv-year{
+  font-family:'Lato',sans-serif;font-size:11px;color:var(--t);
+  letter-spacing:.08em;padding-top:3px;
+}
+.about-body{
+  font-size:14px;color:var(--ink-m);line-height:2.0;margin-bottom:22px;
+}
+.about-body p + p{margin-top:14px;}
+.about-philo{
+  padding:22px 24px;background:var(--paper);
+  border-left:3px solid var(--t);border-radius:0 4px 4px 0;
+  font-family:'Noto Serif JP',serif;font-weight:500;
+  font-size:14px;color:var(--t-dd);line-height:1.95;letter-spacing:.04em;
+  margin-bottom:24px;
+}
+
+.social-row{display:flex;flex-wrap:wrap;gap:8px;}
+.btn-social{
+  display:inline-flex;align-items:center;gap:8px;
+  background:#fff;color:var(--ink);border:1px solid var(--sand-d);
+  border-radius:999px;padding:9px 16px;font-size:12px;
+  text-decoration:none;transition:.2s;letter-spacing:.04em;
+}
+.btn-social:hover{border-color:var(--t);color:var(--t-d);background:var(--t-ghost);}
+.btn-social svg{width:14px;height:14px;flex-shrink:0;}
+
+/* ─────────── SERVICE ─────────── */
+.sec-service{background:var(--t-ddd);color:#fff;position:relative;overflow:hidden;}
+.sec-service::before{
+  content:'OVC';position:absolute;right:-30px;bottom:-60px;
+  font-family:'Lato',sans-serif;font-weight:700;font-size:260px;line-height:1;
+  color:rgba(255,255,255,.04);letter-spacing:-.02em;pointer-events:none;
+}
+.sec-service .eyebrow{color:var(--t-l);}
+.sec-service .eyebrow::before{background:var(--t-l);}
+.sec-service .h-sec{color:#fff;}
+.sec-service .h-sec-en{color:rgba(255,255,255,.5);}
+.sec-service .sec-num{color:rgba(255,255,255,.4);}
+.service-intro{
+  font-size:14.5px;line-height:2.05;color:rgba(255,255,255,.82);
+  margin-bottom:32px;position:relative;
+}
+.svc-list{display:flex;flex-direction:column;position:relative;}
+.svc{
+  display:grid;grid-template-columns:32px 1fr;gap:16px;align-items:center;
+  padding:18px 0;border-bottom:1px solid rgba(255,255,255,.16);
+}
+.svc:last-child{border-bottom:none;}
+.svc-ic{width:24px;height:24px;color:var(--t-l);}
+.svc-ic svg{width:100%;height:100%;}
+.svc-name{font-size:15px;color:#fff;font-weight:400;letter-spacing:.04em;}
+.svc-tag{
+  font-family:'Lato',sans-serif;font-size:9px;font-weight:700;letter-spacing:.16em;
+  color:var(--t-ddd);background:#fff;padding:3px 10px;border-radius:2px;text-transform:uppercase;
+}
+
+/* ─────────── FEATURES ─────────── */
+.sec-features{background:var(--ivory);}
+.feat-grid{display:flex;flex-direction:column;}
+.feat{
+  padding:30px 0;border-bottom:1px solid var(--sand-d);
+  display:grid;grid-template-columns:64px 1fr;gap:18px;align-items:start;
+}
+.feat:last-child{border-bottom:none;}
+.feat-n{
+  font-family:'Lato',sans-serif;font-weight:300;font-size:42px;color:var(--t-l);
+  line-height:1;font-style:italic;padding-top:6px;letter-spacing:-.02em;
+}
+.feat-t{
+  font-family:'Noto Serif JP',serif;font-weight:600;font-size:17px;
+  color:var(--t-ddd);letter-spacing:.04em;margin-bottom:8px;
+}
+.feat-d{font-size:13.5px;color:var(--ink-m);line-height:1.9;}
+
+/* ─────────── FLOW ─────────── */
+.sec-flow{background:var(--sand);}
+.flow{display:flex;flex-direction:column;position:relative;}
+.flow-item{
+  display:grid;grid-template-columns:54px 1fr;gap:16px;
+  padding:22px 0;position:relative;
+}
+.flow-l{position:relative;display:flex;flex-direction:column;align-items:center;}
+.flow-dot{
+  width:40px;height:40px;border-radius:50%;
+  background:var(--ivory);border:1.5px solid var(--t);color:var(--t-dd);
+  font-family:'Noto Serif JP',serif;font-weight:600;font-size:14px;
+  display:flex;align-items:center;justify-content:center;flex-shrink:0;
+  z-index:2;letter-spacing:.02em;
+}
+.flow-line{
+  width:1px;flex:1;background:rgba(91,173,168,.32);
+  margin-top:6px;min-height:18px;
+}
+.flow-item:last-child .flow-line{display:none;}
+.flow-t{
+  font-family:'Noto Serif JP',serif;font-weight:600;font-size:15px;color:var(--t-ddd);
+  letter-spacing:.04em;margin-bottom:4px;padding-top:9px;
+}
+.flow-d{font-size:13px;color:var(--ink-m);line-height:1.7;}
+.flow-note{
+  margin-top:18px;padding:18px 20px;
+  background:var(--paper);border-left:3px solid var(--t);border-radius:0 4px 4px 0;
+  font-size:13px;color:var(--ink-m);line-height:1.85;
+  display:flex;gap:10px;align-items:start;
+}
+.flow-note svg{width:18px;height:18px;color:var(--t);flex-shrink:0;margin-top:1px;}
+
+/* ─────────── PRICING ─────────── */
+.sec-pricing{background:var(--ivory);position:relative;}
+.price-intro{
+  font-size:13.5px;color:var(--ink-m);line-height:1.9;
+  margin-bottom:30px;padding:18px 22px;
+  background:var(--t-ghost);border-left:3px solid var(--t);border-radius:0 4px 4px 0;
+}
+.price-cards{display:flex;flex-direction:column;gap:12px;}
+.pcard{
+  background:#fff;border:1px solid var(--t-ll);border-radius:4px;
+  padding:24px 22px;position:relative;
+}
+.pcard-accent{
+  background:linear-gradient(180deg,var(--paper),#fff);
+  border-color:var(--gold-l);
+  box-shadow:0 6px 24px rgba(196,154,74,.12);
+}
+.pcard-accent::before{
+  content:'';position:absolute;left:0;top:0;bottom:0;width:3px;
+  background:linear-gradient(180deg,var(--gold),var(--t));border-radius:4px 0 0 4px;
+}
+.pcard-head{display:flex;align-items:flex-start;gap:14px;margin-bottom:18px;}
+.pcard-ic{
+  width:38px;height:38px;flex-shrink:0;display:flex;align-items:center;justify-content:center;
+  background:var(--t-ghost);color:var(--t-d);border-radius:8px;
+}
+.pcard-ic svg{width:20px;height:20px;}
+.pcard-title-block{flex:1;}
+.pcard-name{
+  font-family:'Noto Serif JP',serif;font-weight:600;font-size:16px;color:var(--t-ddd);
+  letter-spacing:.04em;line-height:1.3;
+}
+.pcard-desc{
+  font-size:11.5px;color:var(--ink-m);line-height:1.55;
+  letter-spacing:.02em;margin-top:5px;
+}
+.price-row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;}
+.price-row.two{grid-template-columns:1fr 1fr;}
+.price-row.one{grid-template-columns:1fr;}
+.price-item{
+  background:var(--t-ghost);border-radius:4px;padding:14px 10px;text-align:center;
+}
+.price-label{
+  font-family:'Lato',sans-serif;font-size:10px;font-weight:700;letter-spacing:.14em;
+  color:var(--t-d);text-transform:uppercase;margin-bottom:6px;
+}
+.price-num{
+  font-family:'Lato',sans-serif;font-size:22px;font-weight:700;color:var(--ink);
+  letter-spacing:-.01em;line-height:1;
+}
+.price-yen{font-size:12px;font-weight:400;color:var(--ink-m);margin-right:1px;}
+.price-consult{
+  font-family:'Noto Serif JP',serif;font-weight:600;font-size:16px;color:var(--t-d);
+  letter-spacing:.06em;padding:14px 12px;background:var(--t-ghost);border-radius:4px;text-align:center;
+}
+.pcard-note{
+  margin-top:14px;font-size:11.5px;color:var(--ink-m);line-height:1.85;
+}
+.pcard-note .row{display:flex;gap:8px;}
+.pcard-note .row::before{content:'※';color:var(--t-l);flex-shrink:0;}
+
+.surcharge-section{margin-top:24px;}
+.surcharge-title{
+  font-family:'Lato',sans-serif;font-size:10px;font-weight:700;letter-spacing:.24em;
+  color:var(--t-l);text-transform:uppercase;margin-bottom:14px;
+  display:flex;align-items:center;gap:10px;
+}
+.surcharge-title::after{content:'';flex:1;height:1px;background:var(--sand-d);}
+.surch-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;}
+.surch{
+  background:var(--paper);border:1px solid var(--sand-d);border-radius:4px;
+  padding:14px 14px;
+  display:flex;align-items:center;gap:10px;
+}
+.surch-l{flex:1;min-width:0;}
+.surch-label{font-size:12px;color:var(--ink);font-weight:500;letter-spacing:.04em;}
+.surch-note{font-size:10px;color:var(--ink-sub);margin-top:2px;}
+.surch-pct{
+  font-family:'Lato',sans-serif;font-size:18px;font-weight:700;color:var(--gold);
+  flex-shrink:0;letter-spacing:-.01em;
+}
+.surch-pct.yen{color:var(--t-d);}
+.price-fineprint{
+  margin-top:20px;font-size:11px;color:var(--ink-sub);line-height:1.8;
+}
+.price-fineprint p{display:flex;gap:6px;}
+.price-fineprint p::before{content:'✦';color:var(--t-l);}
+
+/* ─────────── CASES ─────────── */
+.sec-cases{background:var(--ivory-d);}
+.case-list{display:flex;flex-direction:column;}
+.case{
+  padding:22px 0;border-bottom:1px solid var(--sand-d);
+  display:grid;grid-template-columns:38px 1fr;gap:16px;align-items:start;
+}
+.case:last-child{border-bottom:none;}
+.case-ic{
+  width:36px;height:36px;border-radius:50%;
+  background:var(--t-ghost);color:var(--t-d);
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Lato',sans-serif;font-weight:700;font-size:11px;letter-spacing:.08em;
+  flex-shrink:0;
+}
+.case-t{
+  font-family:'Noto Serif JP',serif;font-weight:600;font-size:15px;color:var(--t-ddd);
+  letter-spacing:.04em;margin-bottom:6px;
+}
+.case-d{font-size:13px;color:var(--ink-m);line-height:1.8;}
+
+/* ─────────── AREA ─────────── */
+.sec-area{background:var(--paper);position:relative;}
+.area-photo{
+  width:100%;aspect-ratio:5/4;overflow:hidden;border-radius:2px;
+  margin-bottom:26px;position:relative;
+  box-shadow:0 14px 40px rgba(14,61,58,.16);
+}
+.area-photo img{width:100%;height:100%;object-fit:cover;object-position:50% 74%;}
+.area-cap{
+  position:absolute;right:14px;bottom:14px;z-index:2;
+  display:inline-flex;align-items:center;gap:10px;
+  padding:8px 14px 8px 12px;
+  background:rgba(14,61,58,.88);backdrop-filter:blur(8px);
+  color:#fff;border-radius:2px;
+}
+.area-cap-pin{
+  width:18px;height:18px;border-radius:50%;
+  background:var(--t-l);color:var(--t-ddd);
+  display:flex;align-items:center;justify-content:center;
+  font-size:10px;font-weight:700;flex-shrink:0;
+}
+.area-cap-place{
+  font-family:'Lato',sans-serif;font-style:italic;font-weight:300;font-size:11px;
+  letter-spacing:.12em;
+}
+.area-cap-sub{
+  font-family:'Noto Serif JP',serif;font-weight:500;font-size:11px;
+  color:rgba(255,255,255,.7);letter-spacing:.06em;margin-top:1px;
+}
+.area-intro{
+  font-size:14.5px;color:var(--ink-m);line-height:2.0;margin-bottom:28px;
+}
+.area-hub{
+  background:var(--t-ddd);color:#fff;padding:30px 26px;border-radius:4px;
+  margin-bottom:10px;position:relative;overflow:hidden;
+}
+.area-hub::before{
+  content:'';position:absolute;right:-50px;top:-50px;
+  width:200px;height:200px;border-radius:50%;
+  background:rgba(91,173,168,.16);pointer-events:none;
+}
+.area-hub::after{
+  content:'TOKOROZAWA';position:absolute;right:-10px;bottom:-22px;
+  font-family:'Lato',sans-serif;font-weight:700;font-size:78px;line-height:1;
+  color:rgba(255,255,255,.05);letter-spacing:-.02em;pointer-events:none;
+}
+.area-hub-label{
+  font-family:'Lato',sans-serif;font-style:italic;font-weight:300;font-size:12px;
+  color:var(--t-l);letter-spacing:.06em;margin-bottom:10px;position:relative;
+  display:inline-flex;align-items:center;gap:8px;
+}
+.area-hub-label::before{
+  content:'';width:8px;height:8px;border-radius:50%;background:var(--t-l);
+  box-shadow:0 0 0 4px rgba(178,219,216,.25);
+}
+.area-hub-name{
+  font-family:'Noto Serif JP',serif;font-weight:600;font-size:30px;
+  letter-spacing:.08em;line-height:1.3;position:relative;
+}
+.area-hub-en{
+  font-family:'Lato',sans-serif;font-size:11px;color:rgba(255,255,255,.5);
+  letter-spacing:.22em;margin-top:8px;position:relative;
+}
+.area-sub{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:14px;}
+.area-sub-item{
+  background:#fff;border:1px solid var(--t-ll);border-radius:4px;
+  padding:18px 16px;text-align:center;
+}
+.area-sub-label{
+  font-family:'Lato',sans-serif;font-size:9px;font-weight:700;letter-spacing:.18em;
+  color:var(--t);text-transform:uppercase;margin-bottom:8px;
+}
+.area-sub-name{
+  font-family:'Noto Serif JP',serif;font-weight:600;font-size:18px;
+  color:var(--t-ddd);letter-spacing:.06em;
+}
+.area-sub-en{
+  font-family:'Lato',sans-serif;font-size:10px;color:var(--ink-sub);
+  letter-spacing:.22em;margin-top:5px;
+}
+.area-extended{
+  padding:14px 18px;background:var(--t-ghost);border-radius:4px;
+  font-size:12.5px;color:var(--ink-m);line-height:1.7;
+  display:flex;gap:12px;align-items:center;
+}
+.area-extended-label{
+  font-family:'Lato',sans-serif;font-size:10px;font-weight:700;letter-spacing:.18em;
+  color:var(--t);text-transform:uppercase;flex-shrink:0;
+}
+.area-fee{
+  margin-top:22px;padding-top:18px;border-top:1px solid var(--sand-d);
+  font-size:12px;color:var(--ink-sub);line-height:1.85;
+}
+.area-fee p{display:flex;gap:6px;}
+.area-fee p::before{content:'※';color:var(--t-l);flex-shrink:0;}
+@media(min-width:768px){
+  .area-photo{aspect-ratio:21/9;}
+  .area-photo img{object-position:50% 67%;}
+}
+
+/* about base pill */
+.about-base{
+  display:inline-flex;align-items:center;gap:7px;
+  background:var(--t-ghost);color:var(--t-dd);
+  border:1px solid var(--t-ll);border-radius:999px;
+  padding:5px 12px;font-size:11px;font-weight:500;letter-spacing:.06em;
+  margin-bottom:22px;
+}
+.about-base-pin{
+  width:6px;height:6px;border-radius:50%;background:var(--t);
+  box-shadow:0 0 0 3px rgba(91,173,168,.2);
+}
+
+/* ─────────── MOMENTS GALLERY (legacy, unused) ─────────── */
+.sec-moments{
+  background:var(--paper);padding:60px 0 80px;position:relative;
+}
+.moments-head{
+  padding:0 24px;margin-bottom:28px;
+  display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap;
+}
+.moments-title{
+  font-family:'Noto Serif JP',serif;font-weight:600;font-size:22px;color:var(--t-ddd);
+  letter-spacing:.06em;line-height:1.4;
+}
+.moments-title em{font-style:normal;font-family:'Lato',sans-serif;font-style:italic;font-weight:300;
+  font-size:14px;color:var(--ink-sub);margin-left:10px;letter-spacing:.04em;}
+.moments-strip{
+  display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;
+  padding:0 24px 6px;-webkit-overflow-scrolling:touch;
+}
+.moments-strip::-webkit-scrollbar{height:6px;}
+.moments-strip::-webkit-scrollbar-thumb{background:rgba(91,173,168,.3);border-radius:3px;}
+.moment{
+  flex:0 0 auto;width:72%;max-width:320px;scroll-snap-align:start;
+  position:relative;
+}
+.moment-photo{
+  width:100%;aspect-ratio:3/4;overflow:hidden;border-radius:2px;
+  background:var(--t-pale);
+  box-shadow:0 6px 20px rgba(14,61,58,.10);
+}
+.moment-photo img{width:100%;height:100%;object-fit:cover;transition:transform .8s ease;}
+.moment:hover .moment-photo img{transform:scale(1.03);}
+.moment-cap{
+  margin-top:10px;display:flex;align-items:baseline;gap:8px;
+}
+.moment-cap-n{
+  font-family:'Lato',sans-serif;font-style:italic;font-weight:300;font-size:11px;
+  color:var(--t);letter-spacing:.08em;
+}
+.moment-cap-t{font-size:12px;color:var(--ink-m);letter-spacing:.04em;}
+@media(min-width:768px){
+  .sec-moments{padding:80px 0 100px;}
+  .moments-head{padding-left:max(60px,calc((100% - 760px)/2));padding-right:max(60px,calc((100% - 760px)/2));}
+  .moments-strip{
+    padding-left:max(60px,calc((100% - 760px)/2));
+    padding-right:max(60px,calc((100% - 760px)/2));
+    overflow:visible;display:grid;grid-template-columns:repeat(4,1fr);gap:14px;
+  }
+  .moment{width:auto;max-width:none;}
+}
+@media(min-width:1100px){
+  .moments-head{padding-left:max(80px,calc((100% - 940px)/2));padding-right:max(80px,calc((100% - 940px)/2));}
+  .moments-strip{
+    padding-left:max(80px,calc((100% - 940px)/2));
+    padding-right:max(80px,calc((100% - 940px)/2));
+  }
+}
+
+/* ─────────── FAQ ─────────── */
+.sec-faq{background:var(--sand);}
+.faq{display:flex;flex-direction:column;}
+.fq{border-bottom:1px solid var(--sand-d);}
+.fq:first-child{border-top:1px solid var(--sand-d);}
+.fq-q{
+  padding:20px 0;font-size:14px;color:var(--ink);
+  display:grid;grid-template-columns:30px 1fr 20px;gap:10px;align-items:start;
+  cursor:pointer;transition:color .2s;
+  font-weight:500;
+}
+.fq-q:hover{color:var(--t-d);}
+.fq-tag{
+  font-family:'Noto Serif JP',serif;font-weight:600;font-size:18px;color:var(--t);
+  line-height:1;
+}
+.fq-toggle{
+  width:20px;height:20px;color:var(--t);transition:transform .25s;
+  display:flex;align-items:center;justify-content:center;
+}
+.fq.open .fq-toggle{transform:rotate(45deg);}
+.fq-a{max-height:0;overflow:hidden;transition:max-height .35s ease,padding .3s;}
+.fq.open .fq-a{padding:0 0 22px;}
+.fq-a-inner{
+  display:grid;grid-template-columns:30px 1fr 20px;gap:10px;align-items:start;
+  font-size:13px;color:var(--ink-m);line-height:1.9;font-weight:300;
+}
+.fq-a-tag{
+  font-family:'Noto Serif JP',serif;font-weight:600;font-size:18px;color:var(--t-l);
+  line-height:1;
+}
+
+/* ─────────── CLOSING ─────────── */
+.closing-photo{
+  width:100%;aspect-ratio:4/3;overflow:hidden;border-radius:2px;
+  margin-bottom:34px;position:relative;max-width:480px;
+  box-shadow:0 14px 40px rgba(14,61,58,.16);
+}
+.closing-photo img{width:100%;height:100%;object-fit:cover;object-position:42% 50%;}
+.closing-photo-cap{
+  position:absolute;left:14px;bottom:12px;
+  padding:5px 12px;background:rgba(14,61,58,.85);color:#fff;
+  font-family:'Lato',sans-serif;font-style:italic;font-weight:300;font-size:11px;
+  letter-spacing:.1em;border-radius:2px;
+}
+.sec-closing{
+  background:var(--paper);text-align:left;
+  background-image:radial-gradient(circle at 95% 100%,rgba(91,173,168,.08),transparent 50%),
+                  radial-gradient(circle at 0% 0%,rgba(196,154,74,.06),transparent 40%);
+}
+.closing-quote{
+  font-family:'Noto Serif JP',serif;font-weight:500;
+  font-size:clamp(20px,5.4vw,28px);line-height:1.75;color:var(--t-ddd);
+  letter-spacing:.05em;margin-bottom:30px;
+}
+.closing-quote em{font-style:normal;color:var(--t-d);background:linear-gradient(180deg,transparent 70%,rgba(91,173,168,.2) 70%);padding:0 4px;}
+.closing-body{font-size:14px;color:var(--ink-m);line-height:2.0;}
+.closing-body + .closing-body{margin-top:18px;}
+.closing-sig{
+  margin-top:36px;padding-top:24px;border-top:1px solid var(--sand-d);
+  display:flex;align-items:center;gap:14px;
+}
+.closing-sig-mark{width:44px;height:44px;border-radius:50%;overflow:hidden;flex-shrink:0;}
+.closing-sig-mark img{width:100%;height:100%;object-fit:cover;display:block;}
+.closing-sig-name{
+  font-family:'Noto Serif JP',serif;font-weight:600;font-size:14px;color:var(--t-ddd);
+  letter-spacing:.04em;
+}
+.closing-sig-role{
+  font-family:'Lato',sans-serif;font-size:10px;color:var(--ink-sub);
+  letter-spacing:.16em;text-transform:uppercase;margin-top:3px;
+}
+
+/* ─────────── CTA FINAL ─────────── */
+.cta-final{
+  background:var(--t-ddd);padding:80px 24px;text-align:center;position:relative;overflow:hidden;
+}
+.cta-final::before{
+  content:'';position:absolute;inset:0;
+  background:radial-gradient(circle at 50% -10%,rgba(91,173,168,.22),transparent 60%);
+}
+.cta-final::after{
+  content:'OVC';position:absolute;bottom:-100px;right:-30px;
+  font-family:'Lato',sans-serif;font-weight:700;font-size:300px;line-height:1;
+  color:rgba(255,255,255,.04);pointer-events:none;letter-spacing:-.02em;
+}
+.cta-final > *{position:relative;z-index:1;}
+.cta-eb{
+  font-family:'Lato',sans-serif;font-style:italic;font-weight:300;font-size:12px;
+  color:var(--t-l);letter-spacing:.06em;margin-bottom:14px;
+}
+.cta-h{
+  font-family:'Noto Serif JP',serif;font-weight:600;
+  font-size:clamp(24px,6.6vw,34px);color:#fff;line-height:1.55;letter-spacing:.05em;
+  margin-bottom:14px;
+}
+.cta-p{
+  font-size:13px;color:rgba(255,255,255,.7);line-height:1.95;margin-bottom:32px;
+}
+.btn-cta-final{
+  display:inline-flex;align-items:center;gap:12px;
+  background:var(--paper);color:var(--t-ddd);text-decoration:none;
+  padding:20px 38px;border-radius:999px;font-size:16px;font-weight:600;
+  box-shadow:0 10px 32px rgba(0,0,0,.22);transition:.25s;
+  letter-spacing:.04em;font-family:'Noto Serif JP',serif;
+}
+.btn-cta-final:hover{transform:translateY(-2px);box-shadow:0 16px 40px rgba(0,0,0,.28);}
+.line-sq-big{
+  width:24px;height:24px;border-radius:5px;background:#06C755;
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Lato',sans-serif;font-size:13px;font-weight:700;color:#fff;flex-shrink:0;
+}
+.cta-tags{display:flex;justify-content:center;flex-wrap:wrap;gap:8px;margin-top:24px;}
+.cta-tag{
+  background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);
+  color:rgba(255,255,255,.6);padding:5px 13px;border-radius:999px;
+  font-family:'Lato',sans-serif;font-size:10px;letter-spacing:.12em;
+}
+
+/* ─────────── footer ─────────── */
+footer{
+  background:#0E2826;color:rgba(255,255,255,.62);padding:48px 24px 32px;
+  font-size:12px;line-height:1.9;
+}
+.footer-brand-row{display:flex;align-items:center;gap:14px;margin-bottom:22px;}
+.footer-brand-mark{width:40px;height:40px;border-radius:50%;overflow:hidden;flex-shrink:0;}
+.footer-brand-mark img{width:100%;height:100%;object-fit:cover;display:block;}
+.footer-brand-name{
+  font-family:'Noto Serif JP',serif;font-weight:600;font-size:14px;color:#fff;
+  letter-spacing:.05em;
+}
+.footer-brand-en{
+  font-family:'Lato',sans-serif;font-size:10px;color:rgba(255,255,255,.4);
+  letter-spacing:.22em;margin-top:3px;
+}
+.footer-info{display:flex;flex-direction:column;gap:6px;margin-bottom:24px;}
+.footer-info-row{display:flex;gap:14px;font-size:12px;color:rgba(255,255,255,.55);}
+.footer-info-label{
+  font-family:'Lato',sans-serif;font-size:10px;letter-spacing:.18em;color:var(--t-l);
+  text-transform:uppercase;width:74px;flex-shrink:0;padding-top:3px;
+}
+.footer-socials{display:flex;flex-wrap:wrap;gap:8px;padding-bottom:24px;border-bottom:1px solid rgba(255,255,255,.1);margin-bottom:24px;}
+.footer-soc{
+  display:inline-flex;align-items:center;gap:7px;
+  color:rgba(255,255,255,.7);text-decoration:none;font-size:11.5px;
+  padding:8px 14px;border:1px solid rgba(255,255,255,.14);border-radius:999px;
+  transition:.2s;letter-spacing:.04em;
+}
+.footer-soc:hover{border-color:var(--t-l);color:#fff;}
+.footer-soc svg{width:13px;height:13px;flex-shrink:0;}
+.footer-fine{font-size:10.5px;color:rgba(255,255,255,.35);letter-spacing:.08em;}
+
+/* float CTA */
+.float-wrap{
+  position:fixed;bottom:16px;left:50%;transform:translateX(-50%);z-index:190;
+  width:calc(100% - 28px);max-width:400px;
+  transition:opacity .3s,transform .3s;
+}
+.float-wrap.hide{opacity:0;transform:translateX(-50%) translateY(14px);pointer-events:none;}
+.float-btn{
+  display:flex;align-items:center;justify-content:center;gap:10px;
+  background:var(--t-ddd);color:#fff;border:none;border-radius:999px;padding:16px 18px;
+  width:100%;font-size:14px;font-weight:500;
+  box-shadow:0 10px 28px rgba(14,61,58,.32);cursor:pointer;text-decoration:none;
+  transition:.2s;letter-spacing:.04em;
+}
+.float-btn:hover{background:#072826;}
+
+/* reveal */
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .8s ease,transform .8s ease;}
+.reveal.in{opacity:1;transform:translateY(0);}
+
+/* ─────────── モバイルヘッダー調整 ─────────── */
+@media(max-width:767px){
+  .brand-mark{width:40px;height:40px;}
+  .brand{gap:8px;}
+  .brand-jp{font-size:14px;letter-spacing:.03em;}
+  .brand-en{font-size:9px;letter-spacing:.1em;margin-top:3px;}
+  .hd-cta{padding:8px 12px;gap:6px;}
+  .hd-cta-label-lg{display:none;}
+}
+
+/* ─────────── breakpoints ─────────── */
+@media(min-width:768px){
+  .hd{padding:16px 36px;}
+  .brand-mark{width:72px;height:72px;}
+  .brand-jp{font-size:26px;}
+  .hd-cta{padding:11px 20px;font-size:13px;}
+
+  .hero{padding-top:130px;}
+  .hero-inner{
+    display:grid;grid-template-columns:1.05fr 1fr;gap:0;padding:0;
+    min-height:calc(100svh - 130px);
+  }
+  .hero-photo{aspect-ratio:auto;height:100%;border-radius:0;}
+  .hero-overlay{left:40px;right:40px;bottom:60px;}
+  .hero-body{
+    padding:80px 60px;display:flex;flex-direction:column;justify-content:center;
+  }
+  .hero-ribbon{top:150px;}
+
+  .sec{
+    padding-left:max(60px,calc((100% - 760px)/2));
+    padding-right:max(60px,calc((100% - 760px)/2));
+    padding-top:100px;padding-bottom:100px;
+  }
+  .cta-final{
+    padding-left:max(60px,calc((100% - 700px)/2));
+    padding-right:max(60px,calc((100% - 700px)/2));
+    padding-top:110px;padding-bottom:110px;
+  }
+  footer{padding:64px max(60px,calc((100% - 700px)/2)) 36px;}
+
+  .worry-grid{grid-template-columns:repeat(3,1fr);}
+  .worry{padding:28px 22px;min-height:150px;}
+
+  .sec-about-inner{display:grid;grid-template-columns:340px 1fr;gap:50px;align-items:start;}
+  .about-photo{margin-bottom:0;max-width:none;}
+
+  .feat-n{font-size:54px;}
+  .surch-grid{grid-template-columns:repeat(2,1fr);}
+
+  .float-wrap{max-width:340px;right:24px;left:auto;transform:none;bottom:24px;}
+  .float-wrap.hide{transform:translateY(14px);}
+}
+
+@media(min-width:1100px){
+  .sec{
+    padding-left:max(80px,calc((100% - 940px)/2));
+    padding-right:max(80px,calc((100% - 940px)/2));
+  }
+  .hero-body{padding:90px 90px;}
+  .hero-overlay{left:60px;right:60px;bottom:80px;}
+
+  .surch-grid{grid-template-columns:repeat(4,1fr);}
+  .price-cards{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+  .pcard-full{grid-column:1/-1;}
+}
+</style>
+</head>
+<body>
+
+<!-- ─────────── HEADER ─────────── -->
+<header class="hd">
+  <a href="#top" class="brand">
+    <div class="brand-mark"><img src="assets/logo.png" alt=""></div>
+    <div class="brand-txt">
+      <div class="brand-jp">おおたはら動物診療所</div>
+      <div class="brand-en">所沢 ／ OTAHARA VET CLINIC</div>
+    </div>
+  </a>
+  <div class="hd-right">
+  <a href="https://lin.ee/GI29kIF" target="_blank" rel="noopener" class="hd-cta">
+    <span class="line-sq">L</span><span class="hd-cta-label">LINE<span class="hd-cta-label-lg">で無料相談</span></span>
+  </a>
+    <button type="button" class="hd-burger" id="burger" aria-label="メニューを開く" aria-controls="menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ─────────── MENU OVERLAY ─────────── -->
+<nav class="menu-overlay" id="menu" aria-hidden="true">
+  <button type="button" class="menu-close" id="menuClose" aria-label="メニューを閉じる">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    <span class="menu-close-label">Close</span>
+  </button>
+  <div class="menu-inner">
+    <div class="menu-eyebrow">Navigation ／ メニュー</div>
+    <div class="menu-nav">
+      <a href="#top" class="menu-link"><span class="menu-num">00</span><span class="menu-jp">トップへ</span><span class="menu-en">Top</span></a>
+      <a href="#concerns" class="menu-link"><span class="menu-num">01</span><span class="menu-jp">こんなお悩み</span><span class="menu-en">Concerns</span></a>
+      <a href="#doctor" class="menu-link"><span class="menu-num">02</span><span class="menu-jp">獣医師について</span><span class="menu-en">Doctor</span></a>
+      <a href="#service" class="menu-link"><span class="menu-num">03</span><span class="menu-jp">対応内容</span><span class="menu-en">Service</span></a>
+      <a href="#features" class="menu-link"><span class="menu-num">04</span><span class="menu-jp">サービスの特徴</span><span class="menu-en">Features</span></a>
+      <a href="#flow" class="menu-link"><span class="menu-num">05</span><span class="menu-jp">ご利用の流れ</span><span class="menu-en">Flow</span></a>
+      <a href="#pricing" class="menu-link"><span class="menu-num">06</span><span class="menu-jp">料金について</span><span class="menu-en">Pricing</span></a>
+      <a href="#area" class="menu-link"><span class="menu-num">08</span><span class="menu-jp">対応エリア</span><span class="menu-en">Area</span></a>
+      <a href="#faq" class="menu-link"><span class="menu-num">09</span><span class="menu-jp">よくあるご質問</span><span class="menu-en">FAQ</span></a>
+      <a href="#message" class="menu-link"><span class="menu-num">10</span><span class="menu-jp">メッセージ</span><span class="menu-en">Message</span></a>
+    </div>
+    <div class="menu-foot">
+      <a href="https://lin.ee/GI29kIF" target="_blank" rel="noopener" class="menu-cta">
+        <span class="line-sq-big">L</span>LINEで無料相談する
+      </a>
+      <div class="menu-socials">
+        <a href="https://www.instagram.com/otahara_vetclinic/" target="_blank" rel="noopener" class="menu-soc">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor" stroke="none"/></svg>
+          Instagram
+        </a>
+        <a href="https://www.threads.com/@otahara_vetclinic" target="_blank" rel="noopener" class="menu-soc">
+          <svg viewBox="0 0 192 192" fill="currentColor"><path d="M141.5 89a67 67 0 0 0-2.5-1.1c-1.5-27.3-16.4-43-41.5-43.1h-.3c-15 0-27.5 6.4-35.1 18l13.8 9.5c5.7-8.7 14.7-10.5 21.3-10.5h.2c8.3 0 14.5 2.4 18.5 7.1 2.9 3.4 4.9 8.1 5.9 14-7.3-1.2-15.2-1.6-23.7-1.1-23.8 1.4-39.1 15.3-38.1 34.6.5 9.8 5.4 18.2 13.7 23.7 7 4.7 16.1 6.9 25.6 6.4 12.5-.7 22.2-5.4 29-14.1 5.2-6.6 8.5-15.2 9.9-26 5.9 3.6 10.3 8.3 12.8 14 4.1 9.6 4.4 25.5-8.6 38.4-11.3 11.3-24.9 16.2-45.5 16.4-22.8-.2-40.1-7.5-51.3-21.8C35.2 140 29.8 120.7 29.6 96c.2-24.7 5.6-44 16.1-57.3C57 24.4 74.2 17.1 97 17c23 .2 40.5 7.5 52.2 21.8 5.7 7 10 15.9 12.9 26.2l16.1-4.3c-3.4-12.7-8.9-23.6-16.2-32.7C147 11 125.2 1.3 97.1 1.1H97C68.9 1.3 47.3 11 32.8 28.8 19.9 44.7 13.1 67 12.9 96v.1c.2 28.9 7 51.3 19.9 67.2 14.5 17.8 36.1 27.4 64.3 27.7h.1c24.9-.2 42.5-6.7 57-21.2 18.9-18.8 18.3-42.4 12.1-56.8-4.3-10.1-12.8-18.3-24.8-23.9z"/></svg>
+          Threads
+        </a>
+        <a href="https://note.com/otahara_vet" target="_blank" rel="noopener" class="menu-soc">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.5 2h-15A2.5 2.5 0 0 0 2 4.5v15A2.5 2.5 0 0 0 4.5 22h15a2.5 2.5 0 0 0 2.5-2.5v-15A2.5 2.5 0 0 0 19.5 2zm-3 14H7.5v-1.5h9zm0-4H7.5v-1.5h9zm0-4H7.5V6.5h9z"/></svg>
+          note
+        </a>
+      </div>
+      <div class="menu-fine">© Otahara Veterinary Clinic</div>
+    </div>
+  </div>
+</nav>
+
+<!-- ─────────── HERO ─────────── -->
+<section class="hero" id="top">
+  <div class="hero-ribbon">Tokorozawa, Saitama ／ Home Care</div>
+  <div class="hero-inner">
+    <div class="hero-photo">
+      <img src="assets/dog-hero-new.jpg" alt="訪問ケアを受けるシニア犬">
+    </div>
+    <div class="hero-body">
+      <h1 class="hero-h1">
+        通えない日も、<br>
+        <em>暮らしのなかで</em><br>
+        ケアできる。
+      </h1>
+      <p class="hero-sub">
+        高齢、持病、通院がむずかしくなった子のために。<br>
+        獣医師がご自宅へ伺い、その子のリズムに合わせたケアと、ご家族の不安に寄り添う時間をお届けします。
+      </p>
+      <a href="https://lin.ee/GI29kIF" target="_blank" rel="noopener" class="btn-primary">
+        <span class="line-sq">L</span>LINEで無料相談する
+      </a>
+      <div class="hero-meta">
+        <div class="hero-meta-row"><div class="hero-meta-dot"></div>初回は状況確認のみでも構いません</div>
+        <div class="hero-meta-row"><div class="hero-meta-dot"></div>訪問後48時間、LINEでフォロー</div>
+        <div class="hero-meta-row"><div class="hero-meta-dot"></div>埼玉県所沢市拠点／狭山・入間ほか近隣エリア対応</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────── WORRIES ─────────── -->
+<section class="sec sec-worries reveal" id="concerns">
+  <div class="sec-head">
+    <div class="sec-num">01 / Concerns</div>
+    <div class="eyebrow">こんなお悩みは</div>
+    <h2 class="h-sec">通院も介護も、<br>毎日が小さな葛藤の連続。</h2>
+    <div class="h-sec-en">— what's troubling you?</div>
+  </div>
+  <div class="worry-grid">
+    <div class="worry">
+      <div class="worry-num">01</div>
+      <div class="worry-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 20l5-9 4 6 3-4 6 7"/><circle cx="12" cy="6" r="2.5"/></svg></div>
+      <div class="worry-txt">通院の道のりが<br>負担になってきた</div>
+    </div>
+    <div class="worry">
+      <div class="worry-num">02</div>
+      <div class="worry-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+      <div class="worry-txt">高齢で体力が<br>落ちてきている</div>
+    </div>
+    <div class="worry">
+      <div class="worry-num">03</div>
+      <div class="worry-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3l3 3-1 2 6 6 2-1 3 3-3 3-13-13z"/></svg></div>
+      <div class="worry-txt">投薬や点滴を<br>自分で行うのが不安</div>
+    </div>
+    <div class="worry">
+      <div class="worry-num">04</div>
+      <div class="worry-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2M5 19l3-3M19 19l-3-3"/></svg></div>
+      <div class="worry-txt">仕事や介護で<br>時間が取りにくい</div>
+    </div>
+    <div class="worry">
+      <div class="worry-num">05</div>
+      <div class="worry-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7v9a1 1 0 01-1 1h-5v-7H10v7H5a1 1 0 01-1-1z"/></svg></div>
+      <div class="worry-txt">家を空けるのが<br>不安で出かけられない</div>
+    </div>
+    <div class="worry">
+      <div class="worry-num">06</div>
+      <div class="worry-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.5-7-11a4 4 0 017-2 4 4 0 017 2c0 6.5-7 11-7 11z"/></svg></div>
+      <div class="worry-txt">日々の体調変化に<br>気づけているか心配</div>
+    </div>
+  </div>
+
+  <div class="answer-card">
+    <div class="answer-eb">— Our Answer</div>
+    <div class="answer-h">そのお悩み、<em>在宅</em>で<br>解けるかもしれません。</div>
+    <div class="answer-body">獣医師がご自宅へ伺い、その子の状態と暮らしに合わせたケアを行います。「これでいい」と思える時間を、一緒に整えていきます。</div>
+  </div>
+</section>
+
+<!-- ─────────── ABOUT ─────────── -->
+<section class="sec sec-about reveal" id="doctor">
+  <div class="sec-head">
+    <div class="sec-num">02 / Doctor</div>
+    <div class="eyebrow">獣医師について</div>
+    <h2 class="h-sec">治療だけでなく、<br>その子の暮らしに寄り添う。</h2>
+    <div class="h-sec-en">— meet your veterinarian</div>
+  </div>
+  <div class="sec-about-inner">
+    <div>
+      <div class="about-photo">
+        <img src="assets/vet-portrait.jpg" alt="獣医師 大田原こと美">
+      </div>
+    </div>
+    <div>
+      <div class="about-name-row">
+        <span class="about-name">大田原 こと美</span>
+        <span class="about-name-en">Kotomi Otahara, DVM</span>
+      </div>
+      <div class="about-role">Veterinarian ／ Founder of OVC</div>
+      <div class="about-base">
+        <span class="about-base-pin"></span>
+        埼玉県所沢市 拠点 ／ Based in Tokorozawa
+      </div>
+
+      <ul class="cv">
+        <li><span class="cv-year">EDU.</span><span>日本大学 獣医学科 卒業</span></li>
+        <li><span class="cv-year">EXP.</span><span>東京都内 動物病院2施設に勤務</span></li>
+        <li><span class="cv-year">SPEC.</span><span>東京農工大学 行動診療科 研修医</span></li>
+        <li><span class="cv-year">ASSOC.</span><span>日本獣医動物行動学会 所属</span></li>
+        <li><span class="cv-year">NOW.</span><span>埼玉県所沢市にておおたはら動物診療所を開業</span></li>
+      </ul>
+
+      <div class="about-body">
+        <p>慣れた環境の中で過ごすことが、動物にとっての安心につながると考えています。すべてが治療で解決するわけではなく、日々のケアや環境、ご家族の関わり方も、同じくらい大切だと思っています。</p>
+        <p>「できるようにさせる」よりも「安心できる環境を整える」こと。できない日は、やらない——それもまた、その子のための選択だと考えています。</p>
+      </div>
+
+      <div class="about-philo">
+        治療だけでなく、その子の暮らしに寄り添いたい。<br>
+        そんな思いから、訪問ケアという形を選びました。
+      </div>
+
+      <div class="social-row">
+        <a href="https://www.instagram.com/otahara_vetclinic/" target="_blank" rel="noopener" class="btn-social">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor" stroke="none"/></svg>
+          Instagram
+        </a>
+        <a href="https://www.threads.com/@otahara_vetclinic" target="_blank" rel="noopener" class="btn-social">
+          <svg viewBox="0 0 192 192" fill="currentColor"><path d="M141.5 89a67 67 0 0 0-2.5-1.1c-1.5-27.3-16.4-43-41.5-43.1h-.3c-15 0-27.5 6.4-35.1 18l13.8 9.5c5.7-8.7 14.7-10.5 21.3-10.5h.2c8.3 0 14.5 2.4 18.5 7.1 2.9 3.4 4.9 8.1 5.9 14-7.3-1.2-15.2-1.6-23.7-1.1-23.8 1.4-39.1 15.3-38.1 34.6.5 9.8 5.4 18.2 13.7 23.7 7 4.7 16.1 6.9 25.6 6.4 12.5-.7 22.2-5.4 29-14.1 5.2-6.6 8.5-15.2 9.9-26 5.9 3.6 10.3 8.3 12.8 14 4.1 9.6 4.4 25.5-8.6 38.4-11.3 11.3-24.9 16.2-45.5 16.4-22.8-.2-40.1-7.5-51.3-21.8C35.2 140 29.8 120.7 29.6 96c.2-24.7 5.6-44 16.1-57.3C57 24.4 74.2 17.1 97 17c23 .2 40.5 7.5 52.2 21.8 5.7 7 10 15.9 12.9 26.2l16.1-4.3c-3.4-12.7-8.9-23.6-16.2-32.7C147 11 125.2 1.3 97.1 1.1H97C68.9 1.3 47.3 11 32.8 28.8 19.9 44.7 13.1 67 12.9 96v.1c.2 28.9 7 51.3 19.9 67.2 14.5 17.8 36.1 27.4 64.3 27.7h.1c24.9-.2 42.5-6.7 57-21.2 18.9-18.8 18.3-42.4 12.1-56.8-4.3-10.1-12.8-18.3-24.8-23.9zM98.3 129.5c-10.5.6-21.3-4.1-21.9-14.2-.4-7.4 5.3-15.6 22.4-16.6 2-.1 3.9-.2 5.8-.2 6.1 0 11.9.5 17.1 1.6-1.9 24.3-13.6 28.8-23.4 29.4z"/></svg>
+          Threads
+        </a>
+        <a href="https://note.com/otahara_vet" target="_blank" rel="noopener" class="btn-social">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.5 2h-15A2.5 2.5 0 0 0 2 4.5v15A2.5 2.5 0 0 0 4.5 22h15a2.5 2.5 0 0 0 2.5-2.5v-15A2.5 2.5 0 0 0 19.5 2zm-3 14H7.5v-1.5h9zm0-4H7.5v-1.5h9zm0-4H7.5V6.5h9z"/></svg>
+          note
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────── SERVICE ─────────── -->
+<section class="sec sec-service reveal" id="service">
+  <div class="sec-head">
+    <div class="sec-num">03 / Service</div>
+    <div class="eyebrow">主な対応内容</div>
+    <h2 class="h-sec">ご自宅でできる、<br>医療的なケアを。</h2>
+    <div class="h-sec-en">— what we can do at your place</div>
+  </div>
+  <p class="service-intro">
+    ご自宅に伺い、ペットと飼い主様の負担を減らしながら、安心して日常を過ごせる環境を整えます。
+  </p>
+  <div class="svc-list">
+    <div class="svc">
+      <div class="svc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21l-8-8a5 5 0 017-7l1 1 1-1a5 5 0 017 7z"/></svg></div>
+      <div class="svc-name" data-comment-anchor="cc31a7d13a-div">健康チェック・体調観察</div>
+    </div>
+    <div class="svc">
+      <div class="svc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M5 19l2-2M17 7l2-2"/></svg></div>
+      <div class="svc-name">投薬サポート</div>
+    </div>
+    <div class="svc">
+      <div class="svc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 2v6l-3 3v9a2 2 0 002 2h12a2 2 0 002-2v-9l-3-3V2z"/><path d="M7 7h10"/></svg></div>
+      <div class="svc-name">皮下点滴サポート</div>
+    </div>
+    <div class="svc">
+      <div class="svc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2c-1 2-1 4 0 6-2 0-4 2-4 5s2 5 5 5h6c3 0 5-2 5-5s-2-5-4-5c1-2 1-4 0-6"/></svg></div>
+      <div class="svc-name">食事・水分の管理確認</div>
+    </div>
+    <div class="svc">
+      <div class="svc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9 12l2 2 4-4"/></svg></div>
+      <div class="svc-name">排泄・体調の確認</div>
+    </div>
+    <div class="svc">
+      <div class="svc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 01-9 8.4 8.4 8.4 0 01-7.7-4.5L3 21l5.6-1.3a8.4 8.4 0 0012.4-8.2z"/></svg></div>
+      <div class="svc-name">介護に関するアドバイス</div>
+    </div>
+    <div class="svc">
+      <div class="svc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H7a4 4 0 00-4 4v2"/><circle cx="10" cy="7" r="4"/><path d="M21 8v6M18 11h6"/></svg></div>
+      <div class="svc-name">飼い主様へのケア指導</div>
+    </div>
+    <div class="svc">
+      <div class="svc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v12H7l-3 3z"/></svg></div>
+      <div class="svc-name">毎回LINEでご報告</div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────── FEATURES ─────────── -->
+<section class="sec sec-features reveal" id="features">
+  <div class="sec-head">
+    <div class="sec-num">04 / Features</div>
+    <div class="eyebrow">サービスの特徴</div>
+    <h2 class="h-sec">獣医師だから、<br>できることがあります。</h2>
+    <div class="h-sec-en">— what makes us different</div>
+  </div>
+  <div class="feat-grid">
+    <div class="feat">
+      <div class="feat-n">01</div>
+      <div>
+        <div class="feat-t">獣医師が直接対応</div>
+        <div class="feat-d">医療知識をもとに状態を把握し、適切なケアを行います。一般のシッターでは難しい医療的サポートにも対応します。</div>
+      </div>
+    </div>
+    <div class="feat">
+      <div class="feat-n">02</div>
+      <div>
+        <div class="feat-t">在宅で完結する安心</div>
+        <div class="feat-d">通院がむずかしい子でも自宅でケアが可能です。慣れた環境でのケアは、ペットの心身のストレスを大きく和らげます。</div>
+      </div>
+    </div>
+    <div class="feat">
+      <div class="feat-n">03</div>
+      <div>
+        <div class="feat-t">その子だけの個別対応</div>
+        <div class="feat-d">状態・環境・性格に合わせて柔軟に対応。マニュアルではなく、その子のための時間を組み立てます。</div>
+      </div>
+    </div>
+    <div class="feat">
+      <div class="feat-n">04</div>
+      <div>
+        <div class="feat-t">飼い主様の負担も軽く</div>
+        <div class="feat-d">ケアの方法や日常管理についてもサポート。「どう接したらいいか」という不安も一緒に解いていきます。</div>
+      </div>
+    </div>
+    <div class="feat">
+      <div class="feat-n">05</div>
+      <div>
+        <div class="feat-t">訪問後48時間 LINEフォロー</div>
+        <div class="feat-d">ケア後の様子が気になるときも、LINEでご質問・ご相談に対応。安心は、訪問が終わってからも続きます。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────── FLOW ─────────── -->
+<section class="sec sec-flow reveal" id="flow">
+  <div class="sec-head">
+    <div class="sec-num">05 / Flow</div>
+    <div class="eyebrow">ご利用の流れ</div>
+    <h2 class="h-sec">はじめての方も、<br>無理なく一歩ずつ。</h2>
+    <div class="h-sec-en">— how to start</div>
+  </div>
+  <div class="flow">
+    <div class="flow-item">
+      <div class="flow-l"><div class="flow-dot">1</div><div class="flow-line"></div></div>
+      <div>
+        <div class="flow-t">LINEでご相談</div>
+        <div class="flow-d">まずはお気軽にメッセージを。状況だけのご相談でも構いません。</div>
+      </div>
+    </div>
+    <div class="flow-item">
+      <div class="flow-l"><div class="flow-dot">2</div><div class="flow-line"></div></div>
+      <div>
+        <div class="flow-t">初回カウンセリング</div>
+        <div class="flow-d" data-comment-anchor="41b3055c86-div">状態・ご要望・生活環境などを丁寧に確認し、簡易的な健康診断もあわせて行います。</div>
+      </div>
+    </div>
+    <div class="flow-item">
+      <div class="flow-l"><div class="flow-dot">3</div><div class="flow-line"></div></div>
+      <div>
+        <div class="flow-t">訪問日時のご調整</div>
+        <div class="flow-d">ご都合に合わせて日程を組みます。スポット利用も継続もOK。</div>
+      </div>
+    </div>
+    <div class="flow-item">
+      <div class="flow-l"><div class="flow-dot">4</div><div class="flow-line"></div></div>
+      <div>
+        <div class="flow-t">訪問ケア ＋ LINE報告</div>
+        <div class="flow-d">その子のペースに合わせたケアを行い、終了後にご報告をお送りします。</div>
+      </div>
+    </div>
+  </div>
+  <div class="flow-note">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v4M12 16h.01"/></svg>
+    <div>初めての方でも安心してご利用いただけるよう、事前にしっかりと状況をお伺いします。</div>
+  </div>
+</section>
+
+<!-- ─────────── PRICING ─────────── -->
+<section class="sec sec-pricing reveal" id="pricing">
+  <div class="sec-head">
+    <div class="sec-num">06 / Pricing</div>
+    <div class="eyebrow">料金について</div>
+    <h2 class="h-sec">一頭ずつに、<br>丁寧な時間を。</h2>
+    <div class="h-sec-en">— our pricing</div>
+  </div>
+  <p class="price-intro">
+    一頭一頭に合わせた丁寧なケアを行うため、一般的なサービスより少し高めの設定としています。すべて税込・キャッシュレス決済となります。
+  </p>
+
+  <div class="price-cards">
+
+    <!-- 初回カウンセリング (accent) -->
+    <div class="pcard pcard-accent pcard-full">
+      <div class="pcard-head">
+        <div class="pcard-ic">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-1.6 4.9L20 21l-4.7-1.3a8.4 8.4 0 1 1 5.7-8.2z"/><circle cx="8.5" cy="11.5" r=".9" fill="currentColor"/><circle cx="12" cy="11.5" r=".9" fill="currentColor"/><circle cx="15.5" cy="11.5" r=".9" fill="currentColor"/></svg>
+        </div>
+        <div class="pcard-title-block">
+          <div class="pcard-name">初回カウンセリング</div>
+          <div class="pcard-desc">状況・ご要望をうかがう最初のご訪問。簡易健診も実施します。</div>
+        </div>
+      </div>
+      <div class="price-row one">
+        <div class="price-item" style="background:linear-gradient(180deg,#fff,var(--t-ghost));border:1px solid var(--t-ll);">
+          <div class="price-label">最大 60分</div>
+          <div class="price-num"><span class="price-yen">¥</span>7,700</div>
+        </div>
+      </div>
+      <div class="pcard-note">
+        <div class="row">1頭追加につき ＋¥1,100</div>
+        <div class="row">30分延長につき ＋¥2,200</div>
+        <div class="row">30分圏内は出張費込み</div>
+      </div>
+    </div>
+
+    <!-- 往診・健康管理サービス -->
+    <div class="pcard">
+      <div class="pcard-head">
+        <div class="pcard-ic">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3v6a4 4 0 0 0 8 0V3"/><path d="M10 13v3.5a4 4 0 0 0 8 0V15"/><circle cx="18" cy="13.5" r="1.6"/></svg>
+        </div>
+        <div class="pcard-title-block">
+          <div class="pcard-name">訪問ケア</div>
+          <div class="pcard-desc">投薬・点滴など医療的処置を含む、獣医師による訪問ケア。</div>
+        </div>
+      </div>
+      <div class="price-row">
+        <div class="price-item"><div class="price-label">30 min</div><div class="price-num"><span class="price-yen">¥</span>6,600</div></div>
+        <div class="price-item"><div class="price-label">60 min</div><div class="price-num"><span class="price-yen">¥</span>11,000</div></div>
+        <div class="price-item"><div class="price-label">90 min</div><div class="price-num"><span class="price-yen">¥</span>15,000</div></div>
+      </div>
+    </div>
+
+    <!-- 訪問ヘルスケアサービス -->
+    <div class="pcard">
+      <div class="pcard-head">
+        <div class="pcard-ic">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8L4 5l3 1 1 2"/><path d="M19 8l1-3-3 1-1 2"/><path d="M6 8h12v6a4 4 0 0 1-4 4h-4a4 4 0 0 1-4-4z"/><circle cx="10" cy="12" r=".9" fill="currentColor"/><circle cx="14" cy="12" r=".9" fill="currentColor"/><path d="M11 15h2"/></svg>
+        </div>
+        <div class="pcard-title-block">
+          <div class="pcard-name">ペットシッター</div>
+          <div class="pcard-desc">医療処置は伴わず、お世話と体調観察を中心とした訪問。</div>
+        </div>
+      </div>
+      <div class="price-row">
+        <div class="price-item"><div class="price-label">30 min</div><div class="price-num"><span class="price-yen">¥</span>5,500</div></div>
+        <div class="price-item"><div class="price-label">60 min</div><div class="price-num"><span class="price-yen">¥</span>8,800</div></div>
+        <div class="price-item"><div class="price-label">90 min</div><div class="price-num"><span class="price-yen">¥</span>12,500</div></div>
+      </div>
+    </div>
+
+    <!-- お散歩代行 -->
+    <div class="pcard">
+      <div class="pcard-head">
+        <div class="pcard-ic">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="16.5" rx="4.6" ry="3.6"/><ellipse cx="6.5" cy="11" rx="1.8" ry="2.3"/><ellipse cx="17.5" cy="11" rx="1.8" ry="2.3"/><ellipse cx="9.5" cy="7" rx="1.6" ry="2"/><ellipse cx="14.5" cy="7" rx="1.6" ry="2"/></svg>
+        </div>
+        <div class="pcard-title-block">
+          <div class="pcard-name">お散歩代行</div>
+          <div class="pcard-desc">獣医師の視点で体調を見ながらの散歩代行サービス。</div>
+        </div>
+      </div>
+      <div class="price-row two">
+        <div class="price-item"><div class="price-label">30 min</div><div class="price-num"><span class="price-yen">¥</span>4,400</div></div>
+        <div class="price-item"><div class="price-label">60 min</div><div class="price-num"><span class="price-yen">¥</span>6,600</div></div>
+      </div>
+      <div class="pcard-note">
+        <div class="row">中型犬以上はご相談ください</div>
+        <div class="row">同時対応は2頭まで（2頭目以降 ＋¥1,650／頭）</div>
+      </div>
+    </div>
+
+    <!-- 行動診療 -->
+    <div class="pcard">
+      <div class="pcard-head">
+        <div class="pcard-ic">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6.5 6.5 0 0 0-4 11.6c.8.7 1.2 1.4 1.2 2.4h5.6c0-1 .4-1.7 1.2-2.4A6.5 6.5 0 0 0 12 3z"/><path d="M9.2 17h5.6"/><path d="M10 20h4"/><path d="M10.5 11.5l1.5 1.5 1.5-1.5"/></svg>
+        </div>
+        <div class="pcard-title-block">
+          <div class="pcard-name">行動診療</div>
+          <div class="pcard-desc">問題行動の評価と、ご家庭でできる対応をご提案します。</div>
+        </div>
+      </div>
+      <div class="price-row one">
+        <div class="price-consult">症例により個別お見積もり</div>
+      </div>
+      <div class="pcard-note">
+        <div class="row">まずはLINEからご相談ください</div>
+      </div>
+    </div>
+
+  </div><!-- /price-cards -->
+
+  <!-- 追加料金 -->
+  <div class="surcharge-section">
+    <div class="surcharge-title">Travel &amp; Surcharges 出張費・割増</div>
+    <div class="surch-grid">
+      <div class="surch">
+        <div class="surch-l">
+          <div class="surch-label">出張費 〜30分</div>
+          <div class="surch-note">片道30分以内</div>
+        </div>
+        <div class="surch-pct yen">¥1,500</div>
+      </div>
+      <div class="surch">
+        <div class="surch-l">
+          <div class="surch-label">出張費 〜60分</div>
+          <div class="surch-note">片道30〜60分</div>
+        </div>
+        <div class="surch-pct yen">¥2,500</div>
+      </div>
+      <div class="surch">
+        <div class="surch-l">
+          <div class="surch-label">出張費 60分以上</div>
+          <div class="surch-note">片道60分超</div>
+        </div>
+        <div class="surch-pct yen" style="font-size:14px;">応相談</div>
+      </div>
+      <div class="surch">
+        <div class="surch-l">
+          <div class="surch-label">ハイシーズン割増</div>
+          <div class="surch-note">年末年始・GW・お盆</div>
+        </div>
+        <div class="surch-pct">+20%</div>
+      </div>
+      <div class="surch">
+        <div class="surch-l">
+          <div class="surch-label">深夜・早朝割増</div>
+          <div class="surch-note">20:00〜翌8:00</div>
+        </div>
+        <div class="surch-pct">+25%</div>
+      </div>
+      <div class="surch">
+        <div class="surch-l">
+          <div class="surch-label">前日予約割増</div>
+          <div class="surch-note">前日18時以降</div>
+        </div>
+        <div class="surch-pct">+10%</div>
+      </div>
+      <div class="surch">
+        <div class="surch-l">
+          <div class="surch-label">当日予約割増</div>
+          <div class="surch-note">当日のご依頼</div>
+        </div>
+        <div class="surch-pct">+20%</div>
+      </div>
+      <div class="surch">
+        <div class="surch-l">
+          <div class="surch-label">キャンセル料</div>
+          <div class="surch-note">3日前まで無料／前日50％／当日100％</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="price-fineprint">
+    <p>料金はすべて税込表示です</p>
+    <p>お支払いはキャッシュレスのみ（カード／Apple Pay／Google Pay）</p>
+    <p>複数の割増は重複適用されます</p>
+    <p>お散歩代行は、警報・注意報の発令時を除き雨天決行（雨天によるキャンセル料は無料）</p>
+  </div>
+</section>
+
+<!-- ─────────── CASES ─────────── -->
+<section class="sec sec-cases reveal" id="cases">
+  <div class="sec-head">
+    <div class="sec-num">07 / Cases</div>
+    <div class="eyebrow">ご利用ケース</div>
+    <h2 class="h-sec">こんな子たちが、<br>ご利用くださっています。</h2>
+    <div class="h-sec-en">— example cases</div>
+  </div>
+  <div class="case-list">
+    <div class="case">
+      <div class="case-ic">01</div>
+      <div>
+        <div class="case-t">高齢猫の投薬補助</div>
+        <div class="case-d">毎日の投薬がご家族には難しくなってきた猫ちゃんに、確実なケアを継続的に提供。</div>
+      </div>
+    </div>
+    <div class="case">
+      <div class="case-ic">02</div>
+      <div>
+        <div class="case-t">腎疾患の犬の皮下点滴サポート</div>
+        <div class="case-d">通院回数を減らしながら、在宅での補液を獣医師が継続的にサポート。</div>
+      </div>
+    </div>
+    <div class="case">
+      <div class="case-ic">03</div>
+      <div>
+        <div class="case-t">寝たきりのワンちゃんの介護</div>
+        <div class="case-d">体位変換・褥瘡予防・排泄ケアまで、日常的な介護を医療的観点から支援。</div>
+      </div>
+    </div>
+    <div class="case">
+      <div class="case-ic">04</div>
+      <div>
+        <div class="case-t">飼い主様ご不在時のケア対応</div>
+        <div class="case-d">入院・出張など、医療的ケアが必要な子のお世話を、安心してお任せいただける形で。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────── AREA ─────────── -->
+<section class="sec sec-area reveal" id="area">
+  <div class="sec-head">
+    <div class="sec-num">08 / Area</div>
+    <div class="eyebrow">対応エリア</div>
+    <h2 class="h-sec">埼玉・所沢を拠点に、<br>暮らしのそばで。</h2>
+    <div class="h-sec-en">— based in Tokorozawa, Saitama</div>
+  </div>
+
+  <div class="area-photo">
+    <img src="assets/dog-park.jpg" alt="所沢市内の公園にて">
+  </div>
+
+  <p class="area-intro">
+    埼玉県所沢市を拠点に、近隣のエリアへご自宅まで伺っています。地元で暮らす獣医師だからこそ、その子の生活圏や日常のリズムに合わせたケアをお届けできると考えています。
+  </p>
+
+  <div class="area-hub">
+    <div class="area-hub-label">— Our base</div>
+    <div class="area-hub-name">所沢市</div>
+    <div class="area-hub-en">TOKOROZAWA, SAITAMA</div>
+  </div>
+  <div class="area-sub">
+    <div class="area-sub-item">
+      <div class="area-sub-label">Nearby</div>
+      <div class="area-sub-name">狭山市</div>
+      <div class="area-sub-en">SAYAMA</div>
+    </div>
+    <div class="area-sub-item">
+      <div class="area-sub-label">Nearby</div>
+      <div class="area-sub-name">入間市</div>
+      <div class="area-sub-en">IRUMA</div>
+    </div>
+  </div>
+  <div class="area-extended">
+    <span class="area-extended-label">Others</span>
+    <span>その他のエリアもLINEにてご相談ください</span>
+  </div>
+
+  <div class="area-fee">
+    <p>片道30分圏内 ¥1,500／30〜60分圏内 ¥2,500／60分以上は応相談</p>
+    <p>東京都内など遠方も状況に応じてご相談を承ります</p>
+  </div>
+</section>
+
+<!-- ─────────── FAQ ─────────── -->
+<section class="sec sec-faq reveal" id="faq">
+  <div class="sec-head">
+    <div class="sec-num">09 / FAQ</div>
+    <div class="eyebrow">よくあるご質問</div>
+    <h2 class="h-sec" data-comment-anchor="b9aa1bfe61-h2">気になることは、<br>事前に。</h2>
+    <div class="h-sec-en">— frequently asked questions</div>
+  </div>
+  <div class="faq">
+    <div class="fq">
+      <div class="fq-q" onclick="toggleFq(this)">
+        <span class="fq-tag">Q.</span>
+        <span>そもそも「訪問ケア」とは、なんですか？</span>
+        <span class="fq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+      </div>
+      <div class="fq-a">
+        <div class="fq-a-inner">
+          <span class="fq-a-tag">A.</span>
+          <span>獣医師がご自宅まで伺い、その子の状態とご家族の暮らしに合わせてケアを行うサービスです。通院がむずかしい子や、日々の体調管理にご不安のあるご家族のために、慣れた環境のまま医療的なサポートを受けられる形を整えました。診察台ではなく、いつものソファや寝床で——その子のペースに合わせた時間をお届けします。</span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <div class="fq">
+      <div class="fq-q" onclick="toggleFq(this)">
+        <span class="fq-tag">Q.</span>
+        <span>初めてでも大丈夫ですか？</span>
+        <span class="fq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+      </div>
+      <div class="fq-a">
+        <div class="fq-a-inner">
+          <span class="fq-a-tag">A.</span>
+          <span>はい、もちろんです。事前にしっかりとヒアリングを行い、状態・ご要望に応じて対応いたします。ご相談だけでもお気軽にどうぞ。</span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <div class="fq">
+      <div class="fq-q" onclick="toggleFq(this)">
+        <span class="fq-tag">Q.</span>
+        <span>医療行為はどこまで対応できますか？</span>
+        <span class="fq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+      </div>
+      <div class="fq-a">
+        <div class="fq-a-inner">
+          <span class="fq-a-tag">A.</span>
+          <span>診断や新たな処方は行えませんが、主治医の指示のもとでの処置・ケアには対応しています。詳細はご相談ください。</span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <div class="fq">
+      <div class="fq-q" onclick="toggleFq(this)">
+        <span class="fq-tag">Q.</span>
+        <span>1回だけの利用も可能ですか？</span>
+        <span class="fq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+      </div>
+      <div class="fq-a">
+        <div class="fq-a-inner">
+          <span class="fq-a-tag">A.</span>
+          <span>可能です。単発・継続、どちらでも承っています。必要なときに必要なだけ、ご活用ください。</span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <div class="fq">
+      <div class="fq-q" onclick="toggleFq(this)">
+        <span class="fq-tag">Q.</span>
+        <span>対応エリアはどこですか？</span>
+        <span class="fq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+      </div>
+      <div class="fq-a">
+        <div class="fq-a-inner">
+          <span class="fq-a-tag">A.</span>
+          <span>所沢市・狭山市・入間市を中心に対応。その他エリアもLINEにてご相談いただけます。</span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <div class="fq">
+      <div class="fq-q" onclick="toggleFq(this)">
+        <span class="fq-tag">Q.</span>
+        <span>ペットシッターだけでも利用できますか？</span>
+        <span class="fq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+      </div>
+      <div class="fq-a">
+        <div class="fq-a-inner">
+          <span class="fq-a-tag">A.</span>
+          <span>はい。お散歩代行やペットシッターなど、医療的な処置を伴わないご利用も承っています。獣医師ならではの視点で、ペットの体調変化や行動変化にも気を配りながらお世話いたします。</span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <div class="fq">
+      <div class="fq-q" onclick="toggleFq(this)">
+        <span class="fq-tag">Q.</span>
+        <span>持病があっても利用できますか？</span>
+        <span class="fq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+      </div>
+      <div class="fq-a">
+        <div class="fq-a-inner">
+          <span class="fq-a-tag">A.</span>
+          <span>はい。むしろそのような子のためのサービスです。主治医の先生との連携を取りながら、無理のないケアを組み立てます。</span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────── CLOSING ─────────── -->
+<section class="sec sec-closing reveal" id="message">
+  <div class="sec-head">
+    <div class="sec-num">10 / Message</div>
+    <div class="eyebrow">メッセージ</div>
+  </div>
+  <div class="closing-photo">
+    <img src="assets/dog-message.jpg" alt="こちらを見つめるシニア犬">
+  </div>
+  <p class="closing-quote">
+    通えない日も、不安な夜も。<br>
+    その子の隣で、<em>「これでいい」</em>と<br>
+    思える時間を。
+  </p>
+  <p class="closing-body">
+    ペットの高齢化や持病により、在宅でのケアの大切さは年々高まっています。「通院がむずかしい」「自分だけでは不安」——そのような状況の中でも、安心して毎日を過ごせるようサポートいたします。
+  </p>
+  <p class="closing-body">
+    まずは気軽に、話しかけてみてください。一緒に、その子に合う時間を考えていきましょう。
+  </p>
+  <div class="closing-sig">
+    <div class="closing-sig-mark"><img src="assets/logo.png" alt=""></div>
+    <div>
+      <div class="closing-sig-name">大田原 こと美</div>
+      <div class="closing-sig-role">OVC ／ Veterinarian</div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────── CTA FINAL ─────────── -->
+<section class="cta-final" id="cta">
+  <div class="cta-eb">— Let's talk</div>
+  <h2 class="cta-h">LINEで無料相談、<br>受付中です。</h2>
+  <p class="cta-p">
+    初回は状況確認だけでも構いません。<br>
+    訪問後48時間はLINEでフォロー対応いたします。
+  </p>
+  <a href="https://lin.ee/GI29kIF" target="_blank" rel="noopener" class="btn-cta-final">
+    <span class="line-sq-big">L</span>LINEで相談する
+  </a>
+  <div class="cta-tags">
+    <span class="cta-tag">無料相談</span>
+    <span class="cta-tag">獣医師訪問</span>
+    <span class="cta-tag">所沢・狭山・入間</span>
+    <span class="cta-tag">8:00–20:00</span>
+  </div>
+</section>
+
+<!-- ─────────── FOOTER ─────────── -->
+<footer>
+  <div class="footer-brand-row">
+    <div class="footer-brand-mark"><img src="assets/logo.png" alt=""></div>
+    <div>
+      <div class="footer-brand-name">おおたはら動物診療所</div>
+      <div class="footer-brand-en">OTAHARA VETERINARY CLINIC ／ OVC</div>
+    </div>
+  </div>
+  <div class="footer-info">
+    <div class="footer-info-row"><span class="footer-info-label">Service</span><span>獣医師による在宅医療サポート・ペットシッター</span></div>
+    <div class="footer-info-row"><span class="footer-info-label">Area</span><span>所沢市・狭山市・入間市／その他応相談</span></div>
+    <div class="footer-info-row"><span class="footer-info-label">Hours</span><span>8:00 – 20:00</span></div>
+  </div>
+  <div class="footer-socials">
+    <a href="https://www.instagram.com/otahara_vetclinic/" target="_blank" rel="noopener" class="footer-soc">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor" stroke="none"/></svg>
+      Instagram
+    </a>
+    <a href="https://www.threads.com/@otahara_vetclinic" target="_blank" rel="noopener" class="footer-soc">
+      <svg viewBox="0 0 192 192" fill="currentColor"><path d="M141.5 89a67 67 0 0 0-2.5-1.1c-1.5-27.3-16.4-43-41.5-43.1h-.3c-15 0-27.5 6.4-35.1 18l13.8 9.5c5.7-8.7 14.7-10.5 21.3-10.5h.2c8.3 0 14.5 2.4 18.5 7.1 2.9 3.4 4.9 8.1 5.9 14-7.3-1.2-15.2-1.6-23.7-1.1-23.8 1.4-39.1 15.3-38.1 34.6.5 9.8 5.4 18.2 13.7 23.7 7 4.7 16.1 6.9 25.6 6.4 12.5-.7 22.2-5.4 29-14.1 5.2-6.6 8.5-15.2 9.9-26 5.9 3.6 10.3 8.3 12.8 14 4.1 9.6 4.4 25.5-8.6 38.4-11.3 11.3-24.9 16.2-45.5 16.4-22.8-.2-40.1-7.5-51.3-21.8C35.2 140 29.8 120.7 29.6 96c.2-24.7 5.6-44 16.1-57.3C57 24.4 74.2 17.1 97 17c23 .2 40.5 7.5 52.2 21.8 5.7 7 10 15.9 12.9 26.2l16.1-4.3c-3.4-12.7-8.9-23.6-16.2-32.7C147 11 125.2 1.3 97.1 1.1H97C68.9 1.3 47.3 11 32.8 28.8 19.9 44.7 13.1 67 12.9 96v.1c.2 28.9 7 51.3 19.9 67.2 14.5 17.8 36.1 27.4 64.3 27.7h.1c24.9-.2 42.5-6.7 57-21.2 18.9-18.8 18.3-42.4 12.1-56.8-4.3-10.1-12.8-18.3-24.8-23.9z"/></svg>
+      Threads
+    </a>
+    <a href="https://note.com/otahara_vet" target="_blank" rel="noopener" class="footer-soc">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.5 2h-15A2.5 2.5 0 0 0 2 4.5v15A2.5 2.5 0 0 0 4.5 22h15a2.5 2.5 0 0 0 2.5-2.5v-15A2.5 2.5 0 0 0 19.5 2zm-3 14H7.5v-1.5h9zm0-4H7.5v-1.5h9zm0-4H7.5V6.5h9z"/></svg>
+      note
+    </a>
+  </div>
+  <div class="footer-fine">© Otahara Veterinary Clinic. All rights reserved.</div>
+</footer>
+
+<script>
+// reveal observer
+const ro = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); });
+}, { threshold: 0.08 });
+document.querySelectorAll('.reveal').forEach(el => ro.observe(el));
+
+// float CTA toggle
+const fw = document.getElementById('fw');
+const ctaEl = document.getElementById('cta');
+if (fw && ctaEl) {
+  new IntersectionObserver((entries) => {
+    fw.classList.toggle('hide', entries[0].isIntersecting);
+  }, { threshold: 0.1 }).observe(ctaEl);
+}
+
+// External link fallback — some preview/iframe sandboxes block target="_blank"
+document.querySelectorAll('a[target="_blank"]').forEach(a => {
+  a.addEventListener('click', (e) => {
+    const href = a.getAttribute('href');
+    if (!href || href.startsWith('#')) return;
+    e.preventDefault();
+    const w = window.open(href, '_blank', 'noopener,noreferrer');
+    if (!w) { (window.top || window).location.href = href; }
+  });
+});
+
+// Hamburger menu toggle
+const burger = document.getElementById('burger');
+const menu = document.getElementById('menu');
+if (burger && menu){
+  const setOpen = (open) => {
+    document.body.classList.toggle('menu-open', open);
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    menu.setAttribute('aria-hidden', open ? 'false' : 'true');
+  };
+  burger.addEventListener('click', () => setOpen(!document.body.classList.contains('menu-open')));
+  const closeBtn = document.getElementById('menuClose');
+  if (closeBtn) closeBtn.addEventListener('click', () => setOpen(false));
+  menu.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', () => setOpen(false));
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && document.body.classList.contains('menu-open')) setOpen(false);
+  });
+}
+
+// FAQ toggle
+function toggleFq(el){
+  const item = el.closest('.fq');
+  const a = item.querySelector('.fq-a');
+  const open = item.classList.contains('open');
+  document.querySelectorAll('.fq.open').forEach(f => {
+    f.classList.remove('open');
+    f.querySelector('.fq-a').style.maxHeight = '0';
+  });
+  if (!open){
+    item.classList.add('open');
+    a.style.maxHeight = a.scrollHeight + 'px';
+  }
+}
+</script>
+</body>
+</html>
