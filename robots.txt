@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://otahara-vetclinic.com/sitemap.xml
+Sitemap: https://otahara-vetclinic.com/column/sitemap.xml

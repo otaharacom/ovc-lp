@@ -1,0 +1,220 @@
+/* ============================================================
+   OVC コラム 共通スタイル
+   LP（index.html）のブランドトークンに合わせている。
+   ・ターコイズ系パレット / ウォームニュートラル
+   ・見出し: Noto Serif JP ／ 本文: Noto Sans JP ／ 英字ラベル: Lato
+   スマホ最優先（モバイルファースト）で記述。
+   ============================================================ */
+:root{
+  /* LPと同一のカラートークン */
+  --t:#5BADA8;
+  --t-d:#3D8F8A;
+  --t-dd:#1F5C58;
+  --t-ddd:#0E3D3A;
+  --t-l:#80C4C0;
+  --t-ll:#B2DBD8;
+  --t-pale:#E6F5F4;
+  --t-ghost:#F2FAF9;
+  --sand:#F5EFE2;
+  --sand-d:#E8DCC2;
+  --ivory:#FDFAF4;
+  --ivory-d:#F7F1E6;
+  --paper:#FFFBF2;
+  --ink:#11211F;
+  --ink-m:#3E5C58;
+  --ink-l:#56847F;
+  --ink-sub:#6E8B86;
+  --gold:#C49A4A;
+  --gold-l:#E1C281;
+}
+
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+html{-webkit-text-size-adjust:100%;}
+body{
+  font-family:'Noto Sans JP',"Hiragino Kaku Gothic ProN",sans-serif;
+  font-weight:300;
+  background:var(--ivory);
+  color:var(--ink);
+  line-height:1.95;
+  font-size:15px;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block;}
+a{color:var(--t-d);}
+
+/* ───── ヘッダー ───── */
+.col-hd{
+  display:flex;align-items:center;gap:12px;
+  padding:14px 20px;
+  background:rgba(253,250,244,.95);
+  border-bottom:1px solid rgba(91,173,168,.16);
+}
+.col-hd a{display:flex;align-items:center;gap:12px;text-decoration:none;}
+.col-hd-mark{width:44px;height:44px;border-radius:50%;overflow:hidden;flex-shrink:0;}
+.col-hd-name{
+  font-family:'Noto Serif JP',serif;font-weight:600;
+  font-size:15px;color:var(--t-ddd);letter-spacing:.04em;
+}
+.col-hd-en{
+  font-family:'Lato',sans-serif;font-size:9px;font-weight:400;
+  letter-spacing:.26em;color:var(--ink-sub);text-transform:uppercase;
+}
+
+/* ───── レイアウト ───── */
+.col-wrap{max-width:720px;margin:0 auto;padding:32px 20px 72px;}
+
+/* パンくず */
+.col-crumb{
+  font-size:12px;color:var(--ink-sub);
+  margin-bottom:26px;line-height:1.6;
+}
+.col-crumb a{color:var(--t-d);text-decoration:none;}
+.col-crumb a:hover{text-decoration:underline;}
+.col-crumb .sep{margin:0 6px;color:var(--t-ll);}
+
+/* ───── 一覧ページ ───── */
+.col-eyebrow{
+  font-family:'Lato',sans-serif;font-size:11px;font-weight:400;
+  letter-spacing:.32em;text-transform:uppercase;color:var(--t);
+  display:inline-flex;align-items:center;gap:12px;
+}
+.col-eyebrow::before{content:'';display:inline-block;width:28px;height:1px;background:var(--t);}
+.col-list-title{
+  font-family:'Noto Serif JP',serif;font-weight:600;
+  font-size:clamp(26px,6.4vw,36px);line-height:1.45;color:var(--t-ddd);
+  letter-spacing:.04em;margin:14px 0 10px;
+}
+.col-list-lead{font-size:14px;color:var(--ink-m);margin-bottom:36px;}
+
+.col-card{
+  display:block;text-decoration:none;
+  background:var(--paper);
+  border:1px solid rgba(91,173,168,.18);
+  border-radius:14px;
+  padding:22px 22px 20px;
+  margin-bottom:18px;
+  transition:box-shadow .2s,border-color .2s;
+}
+.col-card:hover{border-color:var(--t-l);box-shadow:0 4px 18px rgba(31,92,88,.08);}
+.col-card-date{
+  font-family:'Lato',sans-serif;font-size:11px;letter-spacing:.14em;
+  color:var(--ink-sub);margin-bottom:6px;
+}
+.col-card-title{
+  font-family:'Noto Serif JP',serif;font-weight:600;
+  font-size:17px;line-height:1.6;color:var(--t-dd);margin-bottom:8px;
+}
+.col-card-desc{font-size:13px;line-height:1.85;color:var(--ink-m);}
+.col-card-more{
+  display:inline-block;margin-top:10px;
+  font-family:'Lato',sans-serif;font-size:11px;letter-spacing:.18em;
+  color:var(--t-d);text-transform:uppercase;
+}
+
+/* ───── 記事ページ ───── */
+.art-date{
+  font-family:'Lato',sans-serif;font-size:12px;letter-spacing:.14em;
+  color:var(--ink-sub);margin-bottom:10px;
+}
+.art-title{
+  font-family:'Noto Serif JP',serif;font-weight:600;
+  font-size:clamp(22px,5.8vw,30px);line-height:1.6;color:var(--t-ddd);
+  letter-spacing:.03em;margin-bottom:30px;
+  padding-bottom:22px;border-bottom:1px solid var(--sand-d);
+}
+.art-body p{margin:0 0 1.5em;color:var(--ink);}
+.art-body h2{
+  font-family:'Noto Serif JP',serif;font-weight:600;
+  font-size:20px;line-height:1.6;color:var(--t-dd);
+  margin:2.4em 0 1em;padding-left:14px;
+  border-left:3px solid var(--t);
+}
+.art-body h3{
+  font-family:'Noto Serif JP',serif;font-weight:600;
+  font-size:17px;color:var(--t-dd);margin:2em 0 .8em;
+}
+.art-body ul,.art-body ol{margin:0 0 1.5em;padding-left:1.5em;}
+.art-body li{margin-bottom:.5em;}
+.art-body blockquote{
+  background:var(--t-pale);
+  border-left:3px solid var(--t);
+  border-radius:0 10px 10px 0;
+  padding:16px 18px;
+  margin:0 0 1.6em;
+  font-size:14px;color:var(--ink-m);
+}
+.art-body blockquote p{margin:0 0 .8em;color:inherit;}
+.art-body blockquote p:last-child{margin-bottom:0;}
+.art-body hr{
+  border:none;height:1px;background:var(--sand-d);
+  margin:2.4em auto;width:60%;
+}
+.art-body strong{font-weight:700;color:var(--t-ddd);}
+.art-body a{color:var(--t-d);}
+.art-body table{
+  width:100%;border-collapse:collapse;margin:0 0 1.6em;font-size:13px;
+}
+.art-body th,.art-body td{
+  border:1px solid var(--sand-d);padding:8px 10px;text-align:left;line-height:1.7;
+}
+.art-body th{background:var(--t-pale);color:var(--t-dd);font-weight:500;}
+
+/* ───── CTA（初回カウンセリング） ───── */
+.art-cta{
+  margin-top:56px;
+  background:var(--t-ghost);
+  border:1px solid rgba(91,173,168,.25);
+  border-radius:16px;
+  padding:30px 24px;
+  text-align:center;
+}
+.art-cta-eyebrow{
+  font-family:'Lato',sans-serif;font-size:10px;letter-spacing:.3em;
+  text-transform:uppercase;color:var(--t);margin-bottom:8px;
+}
+.art-cta-title{
+  font-family:'Noto Serif JP',serif;font-weight:600;
+  font-size:19px;color:var(--t-ddd);margin-bottom:12px;
+}
+.art-cta-text{font-size:13.5px;line-height:2;color:var(--ink-m);margin-bottom:22px;text-align:left;}
+.art-cta-btn{
+  display:block;
+  background:var(--t-d);color:#fff;
+  font-size:14px;font-weight:500;letter-spacing:.06em;
+  text-decoration:none;
+  padding:15px 20px;border-radius:999px;
+  margin-bottom:12px;
+  transition:background .2s;
+}
+.art-cta-btn:hover{background:var(--t-dd);}
+.art-cta-btn.line{background:#06C755;}
+.art-cta-btn.line:hover{background:#05a648;}
+
+/* 記事下ナビ */
+.art-nav{
+  margin-top:36px;display:flex;flex-direction:column;gap:10px;
+  font-size:13px;
+}
+.art-nav a{color:var(--t-d);text-decoration:none;}
+.art-nav a:hover{text-decoration:underline;}
+
+/* ───── フッター ───── */
+.col-ft{
+  border-top:1px solid var(--sand-d);
+  padding:30px 20px 40px;text-align:center;
+  color:var(--ink-sub);font-size:11px;
+}
+.col-ft .name{
+  font-family:'Noto Serif JP',serif;font-weight:600;
+  font-size:13px;color:var(--t-ddd);margin-bottom:4px;
+}
+.col-ft a{color:var(--t-d);}
+
+/* ───── PC幅の微調整 ───── */
+@media (min-width:768px){
+  body{font-size:16px;}
+  .col-wrap{padding:48px 24px 96px;}
+  .art-body h2{font-size:22px;}
+  .art-cta{padding:38px 40px;}
+  .art-cta-btn{display:inline-block;min-width:300px;margin:0 8px 12px;}
+}
