@@ -31,7 +31,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/site.css">
+<link rel="stylesheet" href="/assets/site.css?v=ebe903ef67">
 <!-- 構造化データ -->
 <script type="application/ld+json">
 [
@@ -192,25 +192,27 @@
 </nav>
 <main class="page-main">
 <section class="page-hero">
-  <div class="page-hero-inner">
-    <div class="eyebrow">Pet Sitting</div>
-    <h1 class="page-title">ペットシッター・お散歩代行</h1>
-    <p class="page-hook">お留守番のあいだも、<br><em>獣医師の目</em>でお世話します。</p>
-    <p class="page-hero-lead">
-      旅行やお仕事のときだけでなく、ご家族の介護や体調のために手が回らないとき。
-      高齢の子、持病のある子、投薬が必要な子も、慣れた自宅のままお預かりします。
-      動物病院で経験を積んだ獣医師が伺うので、いつもと違う様子にも早く気づけます。
-    </p>
-    <div class="page-hero-meta">
-      <span>投薬・皮下点滴に対応（かかりつけ医の指示のもと）</span>
-      <span>通院同行もご相談可</span>
-      <span>所沢市・狭山市・入間市に対応</span>
-    </div>
-    <a href="https://lin.ee/GI29kIF" target="_blank" rel="noopener" class="btn-primary">
-      <span class="line-sq">L</span>LINEで相談する
-    </a>
+  <div class="page-hero-grid">
     <div class="page-hero-photo">
-      <img src="assets/dog-running.jpg" loading="lazy" alt="ドッグランを元気に歩く犬">
+      <img src="assets/dog-walk-flowers.jpg" fetchpriority="high" alt="彼岸花畑をお散歩中の楽しそうな犬">
+    </div>
+    <div class="page-hero-body">
+      <div class="eyebrow">Pet Sitting</div>
+      <h1 class="page-title">ペットシッター・お散歩代行</h1>
+      <p class="page-hook">お留守番のあいだも、<br><em>獣医師の目</em>でお世話します。</p>
+      <p class="page-hero-lead">
+        旅行やお仕事のときだけでなく、ご家族の介護や体調のために手が回らないとき。
+        高齢の子、持病のある子、投薬が必要な子も、慣れた自宅のままお預かりします。
+        動物病院で経験を積んだ獣医師が伺うので、いつもと違う様子にも早く気づけます。
+      </p>
+      <div class="page-hero-meta">
+        <span>投薬・皮下点滴に対応（かかりつけ医の指示のもと）</span>
+        <span>通院同行もご相談可</span>
+        <span>所沢市・狭山市・入間市に対応</span>
+      </div>
+      <a href="https://lin.ee/GI29kIF" target="_blank" rel="noopener" class="btn-primary">
+        <span class="line-sq">L</span>LINEで相談する
+      </a>
     </div>
   </div>
 </section>
@@ -356,33 +358,45 @@
   <div class="worry-grid">
     <div class="worry">
       <div class="worry-num">01</div>
-      <div class="worry-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
-      <div class="worry-txt">高齢なので<br>長い留守番が不安</div>
+      <div class="worry-row">
+        <div class="worry-txt">高齢なので<br>長い留守番が不安</div>
+        <div class="worry-icon"><img src="assets/worry-icon-senior-dog.png" alt="" loading="lazy"></div>
+      </div>
     </div>
     <div class="worry">
       <div class="worry-num">02</div>
-      <div class="worry-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M12 8a4 4 0 0 1 4 4v6a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2v-6a4 4 0 0 1 4-4z"/></svg></div>
-      <div class="worry-txt">投薬が必要になり<br>シッターに断られた</div>
+      <div class="worry-row">
+        <div class="worry-txt">投薬が必要になり<br>シッターに断られた</div>
+        <div class="worry-icon"><img src="assets/worry-icon-med-refused.png" alt="" loading="lazy"></div>
+      </div>
     </div>
     <div class="worry">
       <div class="worry-num">03</div>
-      <div class="worry-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2"/><circle cx="10" cy="7" r="4"/><path d="M21 8v6M18 11h6"/></svg></div>
-      <div class="worry-txt">離れて暮らす親が<br>犬の散歩に行けていない</div>
+      <div class="worry-row">
+        <div class="worry-txt">離れて暮らす親が<br>犬の散歩に行けていない</div>
+        <div class="worry-icon"><img src="assets/worry-icon-parent-walk.png" alt="" loading="lazy"></div>
+      </div>
     </div>
     <div class="worry">
       <div class="worry-num">04</div>
-      <div class="worry-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4"/><path d="M16 17l5-5-5-5"/><path d="M21 12H9"/></svg></div>
-      <div class="worry-txt">ホテルだと緊張で<br>体調を崩してしまう</div>
+      <div class="worry-row">
+        <div class="worry-txt">ホテルだと緊張で<br>体調を崩してしまう</div>
+        <div class="worry-icon"><img src="assets/worry-icon-hotel-stress.png" alt="" loading="lazy"></div>
+      </div>
     </div>
     <div class="worry">
       <div class="worry-num">05</div>
-      <div class="worry-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
-      <div class="worry-txt">通院の付き添いを<br>お願いしたい</div>
+      <div class="worry-row">
+        <div class="worry-txt">通院の付き添いを<br>お願いしたい</div>
+        <div class="worry-icon"><img src="assets/worry-icon-no-time.png" alt="" loading="lazy"></div>
+      </div>
     </div>
     <div class="worry">
       <div class="worry-num">06</div>
-      <div class="worry-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.5-7-11a4 4 0 017-2 4 4 0 017 2c0 6.5-7 11-7 11z"/></svg></div>
-      <div class="worry-txt">日々の小さな変化に<br>気づいてもらえるか心配</div>
+      <div class="worry-row">
+        <div class="worry-txt">日々の小さな変化に<br>気づいてもらえるか心配</div>
+        <div class="worry-icon"><img src="assets/worry-icon-small-change.png" alt="" loading="lazy"></div>
+      </div>
     </div>
   </div>
   <div class="answer-card">
@@ -625,6 +639,6 @@
   <div class="footer-fine">© Otahara Veterinary Clinic. All rights reserved.</div>
 </footer>
 
-<script src="/assets/site.js" defer></script>
+<script src="/assets/site.js?v=ebe903ef67" defer></script>
 </body>
 </html>

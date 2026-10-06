@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- トップ＋サービスページ。コラム記事は column/sitemap.xml（build_site.py が別途生成） -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://otahara-vetclinic.com/</loc><lastmod>2026-09-22</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://otahara-vetclinic.com/houmon-care.html</loc><lastmod>2026-09-22</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://otahara-vetclinic.com/koudou-shinryo.html</loc><lastmod>2026-09-22</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://otahara-vetclinic.com/petsitter.html</loc><lastmod>2026-09-22</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://otahara-vetclinic.com/</loc><lastmod>2026-10-06</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://otahara-vetclinic.com/houmon-care.html</loc><lastmod>2026-10-06</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://otahara-vetclinic.com/koudou-shinryo.html</loc><lastmod>2026-10-06</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://otahara-vetclinic.com/petsitter.html</loc><lastmod>2026-10-06</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 </urlset>

@@ -260,7 +260,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/site.css">
+<link rel="stylesheet" href="/assets/site.css?v=ebe903ef67">
 </head>
 <body>
 
@@ -365,33 +365,45 @@
   <div class="worry-grid">
     <div class="worry">
       <div class="worry-num">01</div>
-      <div class="worry-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3L5 21"/><path d="M15 3l4 18"/><path d="M12 5v2.2M12 10.4v2.2M12 15.8v2.2"/></svg></div>
-      <div class="worry-txt">通院の道のりが<br>負担になってきた</div>
+      <div class="worry-row">
+        <div class="worry-txt">通院の道のりが<br>負担になってきた</div>
+        <div class="worry-icon"><img src="assets/worry-icon-hospital-road.png" alt="" loading="lazy"></div>
+      </div>
     </div>
     <div class="worry">
       <div class="worry-num">02</div>
-      <div class="worry-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
-      <div class="worry-txt">高齢で体力が<br>落ちてきている</div>
+      <div class="worry-row">
+        <div class="worry-txt">高齢で体力が<br>落ちてきている</div>
+        <div class="worry-icon"><img src="assets/worry-icon-senior-weak.png" alt="" loading="lazy"></div>
+      </div>
     </div>
     <div class="worry">
       <div class="worry-num">03</div>
-      <div class="worry-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12.5l7-7a5 5 0 117 7l-7 7a5 5 0 11-7-7z"/><path d="M8.5 8.5l7 7"/></svg></div>
-      <div class="worry-txt">投薬や点滴を<br>自分で行うのが不安</div>
+      <div class="worry-row">
+        <div class="worry-txt">投薬や点滴を<br>自分で行うのが不安</div>
+        <div class="worry-icon"><img src="assets/worry-icon-iv-drip.png" alt="" loading="lazy"></div>
+      </div>
     </div>
     <div class="worry">
       <div class="worry-num">04</div>
-      <div class="worry-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2M5 19l3-3M19 19l-3-3"/></svg></div>
-      <div class="worry-txt">仕事や介護で<br>時間が取りにくい</div>
+      <div class="worry-row">
+        <div class="worry-txt">仕事や介護で<br>時間が取りにくい</div>
+        <div class="worry-icon"><img src="assets/worry-icon-no-time.png" alt="" loading="lazy"></div>
+      </div>
     </div>
     <div class="worry">
       <div class="worry-num">05</div>
-      <div class="worry-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4"/><path d="M16 17l5-5-5-5"/><path d="M21 12H9"/></svg></div>
-      <div class="worry-txt">家を空けるのが<br>不安で出かけられない</div>
+      <div class="worry-row">
+        <div class="worry-txt">家を空けるのが<br>不安で出かけられない</div>
+        <div class="worry-icon"><img src="assets/worry-icon-leave-home.png" alt="" loading="lazy"></div>
+      </div>
     </div>
     <div class="worry">
       <div class="worry-num">06</div>
-      <div class="worry-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.5-7-11a4 4 0 017-2 4 4 0 017 2c0 6.5-7 11-7 11z"/></svg></div>
-      <div class="worry-txt">日々の体調変化に<br>気づけているか心配</div>
+      <div class="worry-row">
+        <div class="worry-txt">日々の体調変化に<br>気づけているか心配</div>
+        <div class="worry-icon"><img src="assets/worry-icon-health-change.png" alt="" loading="lazy"></div>
+      </div>
     </div>
   </div>
 
@@ -823,23 +835,6 @@
     <img src="assets/area-map-saitama-tokyo.png" loading="lazy" alt="対応エリアの地図。所沢市を拠点に片道30分圏内¥1,500、30〜60分圏内¥2,500、60分以上は応相談">
   </div>
 
-  <div class="area-hub">
-    <div class="area-hub-label">— Our base</div>
-    <div class="area-hub-name">所沢市</div>
-    <div class="area-hub-en">TOKOROZAWA, SAITAMA</div>
-  </div>
-  <div class="area-sub">
-    <div class="area-sub-item">
-      <div class="area-sub-label">Nearby</div>
-      <div class="area-sub-name">狭山市</div>
-      <div class="area-sub-en">SAYAMA</div>
-    </div>
-    <div class="area-sub-item">
-      <div class="area-sub-label">Nearby</div>
-      <div class="area-sub-name">入間市</div>
-      <div class="area-sub-en">IRUMA</div>
-    </div>
-  </div>
   <div class="area-extended">
     <span class="area-extended-label">Others</span>
     <span>その他のエリアもLINEにてご相談ください</span>
@@ -967,14 +962,16 @@
     <div class="sec-num">10 / Message</div>
     <div class="eyebrow">メッセージ</div>
   </div>
-  <div class="closing-photo">
-    <img src="assets/dog-message.jpg" loading="lazy" alt="在宅介護中に飼い主を見つめるシニア犬">
+  <div class="closing-top">
+    <div class="closing-photo">
+      <img src="assets/dog-message.jpg" loading="lazy" alt="在宅介護中に飼い主を見つめるシニア犬">
+    </div>
+    <p class="closing-quote">
+      通えない日も、不安な夜も。<br>
+      その子の隣で、<em>「これでいい」</em>と<br>
+      思える時間を。
+    </p>
   </div>
-  <p class="closing-quote">
-    通えない日も、不安な夜も。<br>
-    その子の隣で、<em>「これでいい」</em>と<br>
-    思える時間を。
-  </p>
   <p class="closing-body">
     ペットの高齢化や持病により、在宅でのケアの大切さは年々高まっています。「通院がむずかしい」「自分だけでは不安」——そのような状況の中でも、安心して毎日を過ごせるようサポートいたします。
   </p>
@@ -1055,7 +1052,7 @@
   <div class="footer-fine">© Otahara Veterinary Clinic. All rights reserved.</div>
 </footer>
 
-<script src="/assets/site.js" defer></script>
+<script src="/assets/site.js?v=ebe903ef67" defer></script>
 
 </body>
 </html>

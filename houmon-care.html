@@ -31,7 +31,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/site.css">
+<link rel="stylesheet" href="/assets/site.css?v=ebe903ef67">
 <!-- 構造化データ -->
 <script type="application/ld+json">
 [
@@ -192,25 +192,27 @@
 </nav>
 <main class="page-main">
 <section class="page-hero">
-  <div class="page-hero-inner">
-    <div class="eyebrow">Home Care</div>
-    <h1 class="page-title">訪問ケア・在宅治療サポート</h1>
-    <p class="page-hook">通えない日も、<br><em>暮らしのなかで</em>ケアを続ける。</p>
-    <p class="page-hero-lead">
-      高齢、持病、通院がむずかしくなった子のために。獣医師がご自宅へ伺い、
-      かかりつけの先生と連携しながら、皮下点滴や投薬のサポート、日々の体調管理、在宅での介護までお手伝いします。
-      診察台ではなく、いつものソファや寝床で。
-    </p>
-    <div class="page-hero-meta">
-      <span>かかりつけ医と連携</span>
-      <span>訪問後48時間 LINEフォロー</span>
-      <span>所沢市・狭山市・入間市に対応</span>
-    </div>
-    <a href="https://lin.ee/GI29kIF" target="_blank" rel="noopener" class="btn-primary">
-      <span class="line-sq">L</span>LINEで相談する
-    </a>
+  <div class="page-hero-grid">
     <div class="page-hero-photo">
-      <img src="assets/dog-carrier.jpg" loading="lazy" alt="スリングで愛犬を連れて歩くシニアの飼い主">
+      <img src="assets/dog-cat-sofa-home.jpg" fetchpriority="high" alt="自宅のソファでくつろぐ2頭の犬" style="object-position:39% 42%;">
+    </div>
+    <div class="page-hero-body">
+      <div class="eyebrow">Home Care</div>
+      <h1 class="page-title">訪問ケア・在宅治療サポート</h1>
+      <p class="page-hook">通えない日も、<br><em>暮らしのなかで</em>ケアを続ける。</p>
+      <p class="page-hero-lead">
+        高齢、持病、通院がむずかしくなった子のために。獣医師がご自宅へ伺い、
+        かかりつけの先生と連携しながら、皮下点滴や投薬のサポート、日々の体調管理、在宅での介護までお手伝いします。
+        診察台ではなく、いつものソファや寝床で。
+      </p>
+      <div class="page-hero-meta">
+        <span>かかりつけ医と連携</span>
+        <span>訪問後48時間 LINEフォロー</span>
+        <span>所沢市・狭山市・入間市に対応</span>
+      </div>
+      <a href="https://lin.ee/GI29kIF" target="_blank" rel="noopener" class="btn-primary">
+        <span class="line-sq">L</span>LINEで相談する
+      </a>
     </div>
   </div>
 </section>
@@ -360,33 +362,45 @@
   <div class="worry-grid">
     <div class="worry">
       <div class="worry-num">01</div>
-      <div class="worry-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3L5 21"/><path d="M15 3l4 18"/><path d="M12 5v2.2M12 10.4v2.2M12 15.8v2.2"/></svg></div>
-      <div class="worry-txt">通院の道のりが<br>負担になってきた</div>
+      <div class="worry-row">
+        <div class="worry-txt">通院の道のりが<br>負担になってきた</div>
+        <div class="worry-icon"><img src="assets/worry-icon-hospital-road.png" alt="" loading="lazy"></div>
+      </div>
     </div>
     <div class="worry">
       <div class="worry-num">02</div>
-      <div class="worry-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
-      <div class="worry-txt">高齢で体力が<br>落ちてきている</div>
+      <div class="worry-row">
+        <div class="worry-txt">高齢で体力が<br>落ちてきている</div>
+        <div class="worry-icon"><img src="assets/worry-icon-senior-weak.png" alt="" loading="lazy"></div>
+      </div>
     </div>
     <div class="worry">
       <div class="worry-num">03</div>
-      <div class="worry-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12.5l7-7a5 5 0 117 7l-7 7a5 5 0 11-7-7z"/><path d="M8.5 8.5l7 7"/></svg></div>
-      <div class="worry-txt">投薬や点滴を<br>自分で行うのが不安</div>
+      <div class="worry-row">
+        <div class="worry-txt">投薬や点滴を<br>自分で行うのが不安</div>
+        <div class="worry-icon"><img src="assets/worry-icon-iv-drip.png" alt="" loading="lazy"></div>
+      </div>
     </div>
     <div class="worry">
       <div class="worry-num">04</div>
-      <div class="worry-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2M5 19l3-3M19 19l-3-3"/></svg></div>
-      <div class="worry-txt">仕事や介護で<br>時間が取りにくい</div>
+      <div class="worry-row">
+        <div class="worry-txt">仕事や介護で<br>時間が取りにくい</div>
+        <div class="worry-icon"><img src="assets/worry-icon-no-time.png" alt="" loading="lazy"></div>
+      </div>
     </div>
     <div class="worry">
       <div class="worry-num">05</div>
-      <div class="worry-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4"/><path d="M16 17l5-5-5-5"/><path d="M21 12H9"/></svg></div>
-      <div class="worry-txt">家を空けるのが<br>不安で出かけられない</div>
+      <div class="worry-row">
+        <div class="worry-txt">家を空けるのが<br>不安で出かけられない</div>
+        <div class="worry-icon"><img src="assets/worry-icon-leave-home.png" alt="" loading="lazy"></div>
+      </div>
     </div>
     <div class="worry">
       <div class="worry-num">06</div>
-      <div class="worry-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.5-7-11a4 4 0 017-2 4 4 0 017 2c0 6.5-7 11-7 11z"/></svg></div>
-      <div class="worry-txt">日々の体調変化に<br>気づけているか心配</div>
+      <div class="worry-row">
+        <div class="worry-txt">日々の体調変化に<br>気づけているか心配</div>
+        <div class="worry-icon"><img src="assets/worry-icon-health-change.png" alt="" loading="lazy"></div>
+      </div>
     </div>
   </div>
   <div class="answer-card">
@@ -668,6 +682,6 @@
   <div class="footer-fine">© Otahara Veterinary Clinic. All rights reserved.</div>
 </footer>
 
-<script src="/assets/site.js" defer></script>
+<script src="/assets/site.js?v=ebe903ef67" defer></script>
 </body>
 </html>
