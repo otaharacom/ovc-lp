@@ -1242,3 +1242,8 @@ footer{
 .cmp-2{margin-top:36px;}
 .cmp-foot{margin-top:12px;font-size:14px;color:var(--ink-m);line-height:1.8;text-align:center;}
 @media (min-width:900px){.cmp-2 .cmp-grid{grid-template-columns:1fr 1fr;}}
+
+/* セクション並べ替えに伴う背景の交互配置 */
+.sec-pricing{background:var(--sand);}
+.sec-flow{background:var(--ivory);}
+.sec-about{background:var(--ivory);}

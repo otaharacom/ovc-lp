@@ -254,6 +254,46 @@
         "@type": "Answer",
         "text": "はい。むしろそのような子のためのサービスです。主治医の先生との連携を取りながら、無理のないケアを組み立てます。"
       }
+    },
+    {
+      "@type": "Question",
+      "name": "急変したら、どうなりますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "訪問中に容体が変わったときは、その場で状態を確認し、飼い主さまとかかりつけ医（または救急の動物病院）へ連絡して、搬送の手配までを行います。診察・治療は行いません。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "かかりつけ医の指示は、どう確認しますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "飼い主さまからかかりつけ医の指示（薬の種類・量、皮下点滴の量や回数など）をお聞きして対応します。不明な点は、初回カウンセリングのときにかかりつけ医へ直接確認します。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "留守中の鍵は、どうなりますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "初回カウンセリングのときに、合鍵をお預かりするか、キーボックスを設置していただき、暗証番号を確認します。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "保険には入っていますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "獣医師個人賠償責任保険に加入しています。補償の範囲はご利用内容によって異なりますので、詳しくはお問い合わせください。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "犬・猫以外の動物も利用できますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "犬・猫以外の動物は、まずお問い合わせください。"
+      }
     }
   ]
 }
@@ -261,7 +301,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/site.css?v=d15b1aa821">
+<link rel="stylesheet" href="/assets/site.css?v=b21c2619ce">
 </head>
 <body>
 
@@ -421,72 +461,10 @@
   </div>
 </section>
 
-<!-- ─────────── ABOUT ─────────── -->
-<section class="sec sec-about reveal" id="doctor">
-  <div class="sec-head">
-    <div class="sec-num">02 / Doctor</div>
-    <div class="eyebrow">獣医師について</div>
-    <h2 class="h-sec">治療だけでなく、<br>その子の暮らしに寄り添う。</h2>
-    <div class="h-sec-en">— meet your veterinarian</div>
-  </div>
-  <div class="sec-about-inner">
-    <div>
-      <div class="about-photo">
-        <img src="assets/vet-portrait.jpg" loading="lazy" alt="おおたはら動物診療所の獣医師 大田原こと美">
-      </div>
-    </div>
-    <div>
-      <div class="about-name-row">
-        <span class="about-name">大田原 こと美</span>
-        <span class="about-name-en">Kotomi Otahara, DVM</span>
-      </div>
-      <div class="about-role">Veterinarian ／ Founder of OVC</div>
-      <div class="about-base">
-        <span class="about-base-pin"></span>
-        埼玉県所沢市 拠点 ／ Based in Tokorozawa
-      </div>
-
-      <ul class="cv">
-        <li><span class="cv-year">EDU.</span><span>日本大学 獣医学科 卒業</span></li>
-        <li><span class="cv-year">EXP.</span><span>沖縄・愛知の動物病院に勤務（愛知では往診も担当）</span></li>
-        <li><span class="cv-year">SPEC.</span><span>東京農工大学 行動診療科で研鑽</span></li>
-        <li><span class="cv-year">ASSOC.</span><span>日本獣医動物行動学会 所属・プラクティショナー資格取得</span></li>
-        <li><span class="cv-year">NOW.</span><span>東京都内2施設・埼玉県内の動物病院に勤務</span></li>
-        <li><span class="cv-year">OPEN.</span><span>埼玉県所沢市にて「獣医師のおうちケア×シッター」を開業</span></li>
-      </ul>
-
-      <div class="about-body">
-        <p>慣れた環境の中で過ごすことが、動物にとっての安心につながると考えています。すべてが治療で解決するわけではなく、日々のケアや環境、ご家族の関わり方も、同じくらい大切だと思っています。</p>
-        <p>「できるようにさせる」よりも「安心できる環境を整える」こと。できない日は、やらない——それもまた、その子のための選択だと考えています。</p>
-      </div>
-
-      <div class="about-philo">
-        治療だけでなく、その子の暮らしに寄り添いたい。<br>
-        そんな思いから、おうちケアという形を選びました。
-      </div>
-
-      <div class="social-row">
-        <a href="https://www.instagram.com/otahara_vetclinic/" target="_blank" rel="noopener" class="btn-social">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor" stroke="none"/></svg>
-          Instagram
-        </a>
-        <a href="https://www.threads.com/@otahara_vetclinic" target="_blank" rel="noopener" class="btn-social">
-          <svg viewBox="0 0 192 192" fill="currentColor"><path d="M141.5 89a67 67 0 0 0-2.5-1.1c-1.5-27.3-16.4-43-41.5-43.1h-.3c-15 0-27.5 6.4-35.1 18l13.8 9.5c5.7-8.7 14.7-10.5 21.3-10.5h.2c8.3 0 14.5 2.4 18.5 7.1 2.9 3.4 4.9 8.1 5.9 14-7.3-1.2-15.2-1.6-23.7-1.1-23.8 1.4-39.1 15.3-38.1 34.6.5 9.8 5.4 18.2 13.7 23.7 7 4.7 16.1 6.9 25.6 6.4 12.5-.7 22.2-5.4 29-14.1 5.2-6.6 8.5-15.2 9.9-26 5.9 3.6 10.3 8.3 12.8 14 4.1 9.6 4.4 25.5-8.6 38.4-11.3 11.3-24.9 16.2-45.5 16.4-22.8-.2-40.1-7.5-51.3-21.8C35.2 140 29.8 120.7 29.6 96c.2-24.7 5.6-44 16.1-57.3C57 24.4 74.2 17.1 97 17c23 .2 40.5 7.5 52.2 21.8 5.7 7 10 15.9 12.9 26.2l16.1-4.3c-3.4-12.7-8.9-23.6-16.2-32.7C147 11 125.2 1.3 97.1 1.1H97C68.9 1.3 47.3 11 32.8 28.8 19.9 44.7 13.1 67 12.9 96v.1c.2 28.9 7 51.3 19.9 67.2 14.5 17.8 36.1 27.4 64.3 27.7h.1c24.9-.2 42.5-6.7 57-21.2 18.9-18.8 18.3-42.4 12.1-56.8-4.3-10.1-12.8-18.3-24.8-23.9zM98.3 129.5c-10.5.6-21.3-4.1-21.9-14.2-.4-7.4 5.3-15.6 22.4-16.6 2-.1 3.9-.2 5.8-.2 6.1 0 11.9.5 17.1 1.6-1.9 24.3-13.6 28.8-23.4 29.4z"/></svg>
-          Threads
-        </a>
-        <a href="https://note.com/otahara_vet" target="_blank" rel="noopener" class="btn-social">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.5 2h-15A2.5 2.5 0 0 0 2 4.5v15A2.5 2.5 0 0 0 4.5 22h15a2.5 2.5 0 0 0 2.5-2.5v-15A2.5 2.5 0 0 0 19.5 2zm-3 14H7.5v-1.5h9zm0-4H7.5v-1.5h9zm0-4H7.5V6.5h9z"/></svg>
-          note
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- ─────────── SERVICE ─────────── -->
 <section class="sec sec-service reveal" id="service">
   <div class="sec-head">
-    <div class="sec-num">03 / Service</div>
+    <div class="sec-num">02 / Service</div>
     <div class="eyebrow">3つのサービス</div>
     <h2 class="h-sec">点滴・投薬まで、<br>ご自宅でできます。</h2>
     <div class="h-sec-en">— what we can do at your place</div>
@@ -507,7 +485,7 @@
 <!-- ─────────── FEATURES ─────────── -->
 <section class="sec sec-features reveal" id="features">
   <div class="sec-head">
-    <div class="sec-num">04 / Features</div>
+    <div class="sec-num">03 / Features</div>
     <div class="eyebrow">サービスの特徴</div>
     <h2 class="h-sec">獣医師だから、<br>できることがあります。</h2>
     <div class="h-sec-en">— what makes us different</div>
@@ -568,54 +546,10 @@
   </div>
 </section>
 
-<!-- ─────────── FLOW ─────────── -->
-<section class="sec sec-flow reveal" id="flow">
-  <div class="sec-head">
-    <div class="sec-num">05 / Flow</div>
-    <div class="eyebrow">ご利用の流れ</div>
-    <h2 class="h-sec">はじめての方も、<br>無理なく一歩ずつ。</h2>
-    <div class="h-sec-en">— how to start</div>
-  </div>
-  <div class="flow">
-    <div class="flow-item">
-      <div class="flow-l"><div class="flow-dot">1</div><div class="flow-line"></div></div>
-      <div>
-        <div class="flow-t">LINEでご相談</div>
-        <div class="flow-d">まずはお気軽にメッセージを。状況だけのご相談でも構いません。</div>
-      </div>
-    </div>
-    <div class="flow-item">
-      <div class="flow-l"><div class="flow-dot">2</div><div class="flow-line"></div></div>
-      <div>
-        <div class="flow-t">初回カウンセリング</div>
-        <div class="flow-d" data-comment-anchor="41b3055c86-div">状態・ご要望・生活環境などを丁寧に確認し、簡易的な健康診断もあわせて行います。</div>
-      </div>
-    </div>
-    <div class="flow-item">
-      <div class="flow-l"><div class="flow-dot">3</div><div class="flow-line"></div></div>
-      <div>
-        <div class="flow-t">訪問日時のご調整</div>
-        <div class="flow-d">ご都合に合わせて日程を組みます。スポット利用も継続もOK。</div>
-      </div>
-    </div>
-    <div class="flow-item">
-      <div class="flow-l"><div class="flow-dot">4</div><div class="flow-line"></div></div>
-      <div>
-        <div class="flow-t">おうちケア ＋ LINE報告</div>
-        <div class="flow-d">その子のペースに合わせたケアを行い、終了後にご報告をお送りします。</div>
-      </div>
-    </div>
-  </div>
-  <div class="flow-note">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v4M12 16h.01"/></svg>
-    <div>初めての方でも安心してご利用いただけるよう、事前にしっかりと状況をお伺いします。</div>
-  </div>
-</section>
-
 <!-- ─────────── PRICING ─────────── -->
 <section class="sec sec-pricing reveal" id="pricing">
   <div class="sec-head">
-    <div class="sec-num">06 / Pricing</div>
+    <div class="sec-num">04 / Pricing</div>
     <div class="eyebrow">料金について</div>
     <h2 class="h-sec">一頭ずつに、<br>丁寧な時間を。</h2>
     <div class="h-sec-en">— our pricing</div>
@@ -800,10 +734,54 @@
   </div>
 </section>
 
+<!-- ─────────── FLOW ─────────── -->
+<section class="sec sec-flow reveal" id="flow">
+  <div class="sec-head">
+    <div class="sec-num">05 / Flow</div>
+    <div class="eyebrow">ご利用の流れ</div>
+    <h2 class="h-sec">はじめての方も、<br>無理なく一歩ずつ。</h2>
+    <div class="h-sec-en">— how to start</div>
+  </div>
+  <div class="flow">
+    <div class="flow-item">
+      <div class="flow-l"><div class="flow-dot">1</div><div class="flow-line"></div></div>
+      <div>
+        <div class="flow-t">LINEでご相談</div>
+        <div class="flow-d">まずはお気軽にメッセージを。状況だけのご相談でも構いません。</div>
+      </div>
+    </div>
+    <div class="flow-item">
+      <div class="flow-l"><div class="flow-dot">2</div><div class="flow-line"></div></div>
+      <div>
+        <div class="flow-t">初回カウンセリング</div>
+        <div class="flow-d" data-comment-anchor="41b3055c86-div">状態・ご要望・生活環境などを丁寧に確認し、簡易的な健康診断もあわせて行います。</div>
+      </div>
+    </div>
+    <div class="flow-item">
+      <div class="flow-l"><div class="flow-dot">3</div><div class="flow-line"></div></div>
+      <div>
+        <div class="flow-t">訪問日時のご調整</div>
+        <div class="flow-d">ご都合に合わせて日程を組みます。スポット利用も継続もOK。</div>
+      </div>
+    </div>
+    <div class="flow-item">
+      <div class="flow-l"><div class="flow-dot">4</div><div class="flow-line"></div></div>
+      <div>
+        <div class="flow-t">おうちケア ＋ LINE報告</div>
+        <div class="flow-d">その子のペースに合わせたケアを行い、終了後にご報告をお送りします。</div>
+      </div>
+    </div>
+  </div>
+  <div class="flow-note">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v4M12 16h.01"/></svg>
+    <div>初めての方でも安心してご利用いただけるよう、事前にしっかりと状況をお伺いします。</div>
+  </div>
+</section>
+
 <!-- ─────────── CASES ─────────── -->
 <section class="sec sec-cases reveal" id="cases">
   <div class="sec-head">
-    <div class="sec-num">07 / Cases</div>
+    <div class="sec-num">06 / Cases</div>
     <div class="eyebrow">ご利用ケース</div>
     <h2 class="h-sec">こんな子たちが、<br>ご利用くださっています。</h2>
     <div class="h-sec-en">— example cases</div>
@@ -835,6 +813,68 @@
       <div>
         <div class="case-t">飼い主様ご不在時のケア対応</div>
         <div class="case-d">入院・出張など、医療的ケアが必要な子のお世話を、安心してお任せいただける形で。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────── ABOUT ─────────── -->
+<section class="sec sec-about reveal" id="doctor">
+  <div class="sec-head">
+    <div class="sec-num">07 / Doctor</div>
+    <div class="eyebrow">獣医師について</div>
+    <h2 class="h-sec">治療だけでなく、<br>その子の暮らしに寄り添う。</h2>
+    <div class="h-sec-en">— meet your veterinarian</div>
+  </div>
+  <div class="sec-about-inner">
+    <div>
+      <div class="about-photo">
+        <img src="assets/vet-portrait.jpg" loading="lazy" alt="おおたはら動物診療所の獣医師 大田原こと美">
+      </div>
+    </div>
+    <div>
+      <div class="about-name-row">
+        <span class="about-name">大田原 こと美</span>
+        <span class="about-name-en">Kotomi Otahara, DVM</span>
+      </div>
+      <div class="about-role">Veterinarian ／ Founder of OVC</div>
+      <div class="about-base">
+        <span class="about-base-pin"></span>
+        埼玉県所沢市 拠点 ／ Based in Tokorozawa
+      </div>
+
+      <ul class="cv">
+        <li><span class="cv-year">EDU.</span><span>日本大学 獣医学科 卒業</span></li>
+        <li><span class="cv-year">EXP.</span><span>沖縄・愛知の動物病院に勤務（愛知では往診も担当）</span></li>
+        <li><span class="cv-year">SPEC.</span><span>東京農工大学 行動診療科で研鑽</span></li>
+        <li><span class="cv-year">ASSOC.</span><span>日本獣医動物行動学会 所属・プラクティショナー資格取得</span></li>
+        <li><span class="cv-year">NOW.</span><span>東京都内2施設・埼玉県内の動物病院に勤務</span></li>
+        <li><span class="cv-year">OPEN.</span><span>埼玉県所沢市にて「獣医師のおうちケア×シッター」を開業</span></li>
+      </ul>
+
+      <div class="about-body">
+        <p>慣れた環境の中で過ごすことが、動物にとっての安心につながると考えています。すべてが治療で解決するわけではなく、日々のケアや環境、ご家族の関わり方も、同じくらい大切だと思っています。</p>
+        <p>「できるようにさせる」よりも「安心できる環境を整える」こと。できない日は、やらない——それもまた、その子のための選択だと考えています。</p>
+      </div>
+
+      <div class="about-philo">
+        治療だけでなく、その子の暮らしに寄り添いたい。<br>
+        そんな思いから、おうちケアという形を選びました。
+      </div>
+
+      <div class="social-row">
+        <a href="https://www.instagram.com/otahara_vetclinic/" target="_blank" rel="noopener" class="btn-social">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor" stroke="none"/></svg>
+          Instagram
+        </a>
+        <a href="https://www.threads.com/@otahara_vetclinic" target="_blank" rel="noopener" class="btn-social">
+          <svg viewBox="0 0 192 192" fill="currentColor"><path d="M141.5 89a67 67 0 0 0-2.5-1.1c-1.5-27.3-16.4-43-41.5-43.1h-.3c-15 0-27.5 6.4-35.1 18l13.8 9.5c5.7-8.7 14.7-10.5 21.3-10.5h.2c8.3 0 14.5 2.4 18.5 7.1 2.9 3.4 4.9 8.1 5.9 14-7.3-1.2-15.2-1.6-23.7-1.1-23.8 1.4-39.1 15.3-38.1 34.6.5 9.8 5.4 18.2 13.7 23.7 7 4.7 16.1 6.9 25.6 6.4 12.5-.7 22.2-5.4 29-14.1 5.2-6.6 8.5-15.2 9.9-26 5.9 3.6 10.3 8.3 12.8 14 4.1 9.6 4.4 25.5-8.6 38.4-11.3 11.3-24.9 16.2-45.5 16.4-22.8-.2-40.1-7.5-51.3-21.8C35.2 140 29.8 120.7 29.6 96c.2-24.7 5.6-44 16.1-57.3C57 24.4 74.2 17.1 97 17c23 .2 40.5 7.5 52.2 21.8 5.7 7 10 15.9 12.9 26.2l16.1-4.3c-3.4-12.7-8.9-23.6-16.2-32.7C147 11 125.2 1.3 97.1 1.1H97C68.9 1.3 47.3 11 32.8 28.8 19.9 44.7 13.1 67 12.9 96v.1c.2 28.9 7 51.3 19.9 67.2 14.5 17.8 36.1 27.4 64.3 27.7h.1c24.9-.2 42.5-6.7 57-21.2 18.9-18.8 18.3-42.4 12.1-56.8-4.3-10.1-12.8-18.3-24.8-23.9zM98.3 129.5c-10.5.6-21.3-4.1-21.9-14.2-.4-7.4 5.3-15.6 22.4-16.6 2-.1 3.9-.2 5.8-.2 6.1 0 11.9.5 17.1 1.6-1.9 24.3-13.6 28.8-23.4 29.4z"/></svg>
+          Threads
+        </a>
+        <a href="https://note.com/otahara_vet" target="_blank" rel="noopener" class="btn-social">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.5 2h-15A2.5 2.5 0 0 0 2 4.5v15A2.5 2.5 0 0 0 4.5 22h15a2.5 2.5 0 0 0 2.5-2.5v-15A2.5 2.5 0 0 0 19.5 2zm-3 14H7.5v-1.5h9zm0-4H7.5v-1.5h9zm0-4H7.5V6.5h9z"/></svg>
+          note
+        </a>
       </div>
     </div>
   </div>
@@ -979,6 +1019,76 @@
         </div>
       </div>
     </div>
+    <div class="fq">
+      <div class="fq-q" onclick="toggleFq(this)">
+        <span class="fq-tag">Q.</span>
+        <span>急変したら、どうなりますか？</span>
+        <span class="fq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+      </div>
+      <div class="fq-a">
+        <div class="fq-a-inner">
+          <span class="fq-a-tag">A.</span>
+          <span>訪問中に容体が変わったときは、その場で状態を確認し、飼い主さまとかかりつけ医（または救急の動物病院）へ連絡して、搬送の手配までを行います。診察・治療は行いません。</span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <div class="fq">
+      <div class="fq-q" onclick="toggleFq(this)">
+        <span class="fq-tag">Q.</span>
+        <span>かかりつけ医の指示は、どう確認しますか？</span>
+        <span class="fq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+      </div>
+      <div class="fq-a">
+        <div class="fq-a-inner">
+          <span class="fq-a-tag">A.</span>
+          <span>飼い主さまからかかりつけ医の指示（薬の種類・量、皮下点滴の量や回数など）をお聞きして対応します。不明な点は、初回カウンセリングのときにかかりつけ医へ直接確認します。</span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <div class="fq">
+      <div class="fq-q" onclick="toggleFq(this)">
+        <span class="fq-tag">Q.</span>
+        <span>留守中の鍵は、どうなりますか？</span>
+        <span class="fq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+      </div>
+      <div class="fq-a">
+        <div class="fq-a-inner">
+          <span class="fq-a-tag">A.</span>
+          <span>初回カウンセリングのときに、合鍵をお預かりするか、キーボックスを設置していただき、暗証番号を確認します。</span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <div class="fq">
+      <div class="fq-q" onclick="toggleFq(this)">
+        <span class="fq-tag">Q.</span>
+        <span>保険には入っていますか？</span>
+        <span class="fq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+      </div>
+      <div class="fq-a">
+        <div class="fq-a-inner">
+          <span class="fq-a-tag">A.</span>
+          <span>獣医師個人賠償責任保険に加入しています。補償の範囲はご利用内容によって異なりますので、詳しくはお問い合わせください。</span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <div class="fq">
+      <div class="fq-q" onclick="toggleFq(this)">
+        <span class="fq-tag">Q.</span>
+        <span>犬・猫以外の動物も利用できますか？</span>
+        <span class="fq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+      </div>
+      <div class="fq-a">
+        <div class="fq-a-inner">
+          <span class="fq-a-tag">A.</span>
+          <span>犬・猫以外の動物は、まずお問い合わせください。</span>
+          <span></span>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -1078,7 +1188,7 @@
   <div class="footer-fine">© Otahara Veterinary Clinic. All rights reserved.</div>
 </footer>
 
-<script src="/assets/site.js?v=d15b1aa821" defer></script>
+<script src="/assets/site.js?v=b21c2619ce" defer></script>
 
 </body>
 </html>

@@ -31,7 +31,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/site.css?v=d15b1aa821">
+<link rel="stylesheet" href="/assets/site.css?v=b21c2619ce">
 <!-- 構造化データ -->
 <script type="application/ld+json">
 [
@@ -122,6 +122,38 @@
         "acceptedAnswer": {
           "@type": "Answer",
           "text": "埼玉県所沢市・狭山市・入間市を中心に対応しています。その他のエリアもLINEにてご相談ください。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "急変したら、どうなりますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "訪問中に容体が変わったときは、その場で状態を確認し、飼い主さまとかかりつけ医（または救急の動物病院）へ連絡して、搬送の手配までを行います。診察・治療は行いません。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "かかりつけ医の指示は、どう確認しますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "飼い主さまからかかりつけ医の指示（薬の種類・量、皮下点滴の量や回数など）をお聞きして対応します。不明な点は、初回カウンセリングのときにかかりつけ医へ直接確認します。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "保険には入っていますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "獣医師個人賠償責任保険に加入しています。補償の範囲はご利用内容によって異なりますので、詳しくはお問い合わせください。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "犬・猫以外の動物も利用できますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "犬・猫以外の動物は、まずお問い合わせください。"
         }
       }
     ]
@@ -636,6 +668,62 @@
         </div>
       </div>
     </div>
+    <div class="fq">
+      <div class="fq-q" onclick="toggleFq(this)">
+        <span class="fq-tag">Q.</span>
+        <span>急変したら、どうなりますか？</span>
+        <span class="fq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+      </div>
+      <div class="fq-a">
+        <div class="fq-a-inner">
+          <span class="fq-a-tag">A.</span>
+          <span>訪問中に容体が変わったときは、その場で状態を確認し、飼い主さまとかかりつけ医（または救急の動物病院）へ連絡して、搬送の手配までを行います。診察・治療は行いません。</span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <div class="fq">
+      <div class="fq-q" onclick="toggleFq(this)">
+        <span class="fq-tag">Q.</span>
+        <span>かかりつけ医の指示は、どう確認しますか？</span>
+        <span class="fq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+      </div>
+      <div class="fq-a">
+        <div class="fq-a-inner">
+          <span class="fq-a-tag">A.</span>
+          <span>飼い主さまからかかりつけ医の指示（薬の種類・量、皮下点滴の量や回数など）をお聞きして対応します。不明な点は、初回カウンセリングのときにかかりつけ医へ直接確認します。</span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <div class="fq">
+      <div class="fq-q" onclick="toggleFq(this)">
+        <span class="fq-tag">Q.</span>
+        <span>保険には入っていますか？</span>
+        <span class="fq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+      </div>
+      <div class="fq-a">
+        <div class="fq-a-inner">
+          <span class="fq-a-tag">A.</span>
+          <span>獣医師個人賠償責任保険に加入しています。補償の範囲はご利用内容によって異なりますので、詳しくはお問い合わせください。</span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <div class="fq">
+      <div class="fq-q" onclick="toggleFq(this)">
+        <span class="fq-tag">Q.</span>
+        <span>犬・猫以外の動物も利用できますか？</span>
+        <span class="fq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+      </div>
+      <div class="fq-a">
+        <div class="fq-a-inner">
+          <span class="fq-a-tag">A.</span>
+          <span>犬・猫以外の動物は、まずお問い合わせください。</span>
+          <span></span>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -724,6 +812,6 @@
   <div class="footer-fine">© Otahara Veterinary Clinic. All rights reserved.</div>
 </footer>
 
-<script src="/assets/site.js?v=d15b1aa821" defer></script>
+<script src="/assets/site.js?v=b21c2619ce" defer></script>
 </body>
 </html>
