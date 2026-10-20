@@ -86,6 +86,7 @@ button,a{font-family:inherit;}
 .brand-mark img{width:100%;height:100%;object-fit:contain;display:block;}
 .brand-txt{display:flex;flex-direction:column;line-height:1;}
 .brand-jp{font-family:'Noto Serif JP',serif;font-weight:600;font-size:22px;color:var(--t-dd);letter-spacing:.06em;}
+.brand-en-jp{letter-spacing:.08em !important;font-family:'Noto Sans JP',sans-serif !important;font-size:12px !important;}
 .brand-en{font-family:'Lato',sans-serif;font-size:13px;font-weight:400;color:var(--ink-sub);letter-spacing:.22em;margin-top:5px;}
 
 .hd-cta{
@@ -518,8 +519,8 @@ body.menu-open .menu-link:nth-child(10){transition-delay:.44s;}
   background:var(--t-ghost);border-radius:4px;padding:14px 10px;text-align:center;
 }
 .price-label{
-  font-family:'Lato',sans-serif;font-size:10px;font-weight:700;letter-spacing:.14em;
-  color:var(--t-d);text-transform:uppercase;margin-bottom:6px;
+  font-family:'Noto Sans JP','Lato',sans-serif;font-size:14px;font-weight:700;letter-spacing:.08em;
+  color:var(--t-d);text-transform:uppercase;margin-bottom:8px;
 }
 .price-num{
   font-family:'Lato',sans-serif;font-size:22px;font-weight:700;color:var(--ink);
@@ -1177,3 +1178,47 @@ footer{
 }
 .sec-links a:hover{background:var(--t-ghost);border-color:var(--t-d);}
 .sec-links a svg{width:14px;height:14px;flex-shrink:0;}
+
+/* ヒーロー右側：獣医師だからできること */
+.hero-can{list-style:none;margin:22px 0 24px;padding:18px 18px 16px;border-radius:16px;background:var(--t-ddd);color:#fff;display:grid;gap:11px;box-shadow:0 10px 28px rgba(14,61,58,.22);}
+.hero-can-t{font-family:'Noto Serif JP',serif;font-size:19px;letter-spacing:.06em;color:#fff;font-weight:600;margin-bottom:2px;display:flex;flex-direction:column;gap:7px;align-items:flex-start;}
+.hero-can-badge{font-family:'Noto Sans JP',sans-serif;font-size:11px;letter-spacing:.14em;background:#B2DBD8;color:var(--t-ddd);padding:2px 10px;border-radius:99px;font-weight:700;}
+.hero-can li{position:relative;padding-left:26px;font-size:15px;line-height:1.6;color:#fff;font-weight:500;}
+.hero-can li::before{content:"";position:absolute;left:3px;top:.55em;width:11px;height:6px;border-left:2.5px solid #B2DBD8;border-bottom:2.5px solid #B2DBD8;transform:rotate(-45deg);}
+/* ヘッダーのブランド表示 */
+.brand-jp{font-size:28px;white-space:nowrap;}
+.brand-en-jp{font-size:10px !important;letter-spacing:.06em !important;margin-top:4px;}
+/* サービスの特徴：比較 */
+.cmp{margin-top:36px;}
+.cmp-t{font-family:'Noto Serif JP',serif;font-size:19px;font-weight:600;color:var(--t-ddd);text-align:center;margin-bottom:16px;line-height:1.6;}
+.cmp-grid{display:grid;grid-template-columns:1fr;gap:12px;}
+.cmp-col{background:#fff;border:1px solid var(--t-ll);border-radius:14px;padding:16px 16px 14px;}
+.cmp-col.cmp-us{background:var(--t-ddd);color:#fff;border-color:var(--t-ddd);box-shadow:0 10px 28px rgba(14,61,58,.22);}
+.cmp-h{font-weight:700;font-size:15px;margin-bottom:8px;display:flex;flex-direction:column;gap:2px;}
+.cmp-h small{font-size:12px;font-weight:500;opacity:.85;}
+.cmp-col ul{list-style:none;padding:0;margin:0;display:grid;gap:7px;}
+.cmp-col li{position:relative;padding-left:20px;font-size:14px;line-height:1.55;}
+.cmp-col li::before{content:"○";position:absolute;left:0;color:var(--t);}
+.cmp-col li.no::before{content:"△";color:#a39e8f;}
+.cmp-us li::before{content:"◎";color:#B2DBD8;}
+@media (min-width:900px){
+  .cmp-grid{grid-template-columns:1fr 1.25fr 1fr;align-items:stretch;}
+}
+@media (max-width:600px){
+  .hero-h1{font-size:clamp(24px,7.2vw,46px);letter-spacing:.02em;}
+  .brand-jp{font-size:14.5px !important;letter-spacing:0 !important;}
+  .brand-en-jp{font-size:9px !important;}
+  .hd-cta{padding:8px 10px;gap:0;}
+  .hd-cta-label{display:none;}
+}
+
+/* 比較を大きく・先頭に */
+.cmp{margin:8px 0 40px;}
+.cmp-t{font-size:clamp(21px,5.6vw,30px);margin-bottom:22px;}
+.cmp-grid{gap:16px;}
+.cmp-col{padding:22px 20px 20px;border-radius:18px;}
+.cmp-h{font-size:19px;margin-bottom:12px;}
+.cmp-h small{font-size:14px;}
+.cmp-col ul{gap:11px;}
+.cmp-col li{font-size:16px;line-height:1.65;padding-left:26px;}
+.cmp-col li::before{font-size:16px;}
