@@ -1222,3 +1222,19 @@ footer{
 .cmp-col ul{gap:11px;}
 .cmp-col li{font-size:16px;line-height:1.65;padding-left:26px;}
 .cmp-col li::before{font-size:16px;}
+
+/* 料金の例 */
+.ex{margin-top:28px;background:#fff;border:1px solid var(--t-ll);border-radius:16px;padding:20px 18px;}
+.ex-t{font-family:'Noto Serif JP',serif;font-weight:600;font-size:18px;color:var(--t-ddd);margin-bottom:12px;}
+.ex-row{display:grid;grid-template-columns:1fr;gap:2px;padding:12px 0;border-top:1px solid var(--t-ll);}
+.ex-row:first-of-type{border-top:none;}
+.ex-name{font-weight:700;font-size:15px;color:var(--ink);}
+.ex-calc{font-size:13px;color:var(--ink-m);line-height:1.6;}
+.ex-sum{font-family:'Lato','Noto Sans JP',sans-serif;font-weight:700;font-size:20px;color:var(--t-d);}
+.ex-note{margin-top:10px;font-size:13px;color:var(--ink-m);line-height:1.7;}
+@media (min-width:700px){.ex-row{grid-template-columns:1.4fr 1.6fr auto;align-items:center;gap:16px;}.ex-sum{text-align:right;}}
+.svc3{display:grid;gap:12px;margin:18px 0 8px;}
+.svc3 a{display:block;background:#fff;border:1px solid var(--t-ll);border-radius:14px;padding:16px 18px;text-decoration:none;color:var(--ink);}
+.svc3 a b{display:block;font-family:'Noto Serif JP',serif;font-size:18px;color:var(--t-ddd);margin-bottom:4px;}
+.svc3 a span{font-size:14px;line-height:1.7;color:var(--ink-m);}
+@media (min-width:900px){.svc3{grid-template-columns:repeat(3,1fr);}}
