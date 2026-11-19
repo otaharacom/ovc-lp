@@ -1264,8 +1264,8 @@ footer{
 .news-list a:hover{color:var(--t-d);text-decoration:underline;}
 @media (min-width:700px){.news-list a{flex:1 1 0;}}
 
-/* ─────────── 行動診療のご案内（ヒーロー内、hero-subの下）─────────── */
-.hero-koudou{margin:0 0 18px;padding:2px 0 2px 14px;border-left:3px solid var(--t-l);}
-.hero-koudou p{font-size:14px;line-height:1.95;color:var(--ink-m);margin:0 0 6px;}
-.hero-koudou a{display:inline-flex;align-items:center;gap:6px;font-size:14px;color:var(--t-dd);text-decoration:underline;text-underline-offset:4px;}
-.hero-koudou a svg{width:15px;height:15px;}
+/* ─────────── 行動診療のご案内（ヒーロー内、hero-subの下・文字サイズはhero-subと同じ）─────────── */
+.hero-koudou{margin:0 0 22px;padding:2px 0 2px 14px;border-left:3px solid var(--t-l);max-width:520px;}
+.hero-koudou p{font-size:17px;line-height:1.85;color:var(--ink-m);margin:0 0 8px;}
+.hero-koudou a{display:inline-flex;align-items:center;gap:6px;font-size:16px;color:var(--t-dd);text-decoration:underline;text-underline-offset:4px;}
+.hero-koudou a svg{width:16px;height:16px;}
